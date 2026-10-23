@@ -24,3 +24,7 @@ The repository is public. Never commit a key, `.p8`, certificate, provisioning p
 Push to `main`, or run **Actions > testflight > Run workflow**. The workflow archives with automatic signing, checks the App Clip is under 15 MB, then exports and uploads to App Store Connect. The build number is the run number; the version is `MARKETING_VERSION` in `project.yml`.
 
 To install it, add yourself to an **Internal Testing** group in App Store Connect (TestFlight tab of the Waffi app) once, then open TestFlight on the iPhone. Processing in App Store Connect takes a few minutes after the upload.
+
+## Prerequisite: one registered device
+
+Automatic signing makes development profiles during the archive, and Apple only makes them when the team has at least one registered device. Register your iPhone once under Certificates, Identifiers & Profiles > Devices on developer.apple.com; without it the archive fails with "Your team has no devices from which to generate a provisioning profile".
