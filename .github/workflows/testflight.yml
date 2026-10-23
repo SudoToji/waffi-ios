@@ -1,0 +1,93 @@
+name: testflight
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: testflight
+  cancel-in-progress: false
+
+jobs:
+  upload:
+    runs-on: macos-26
+    timeout-minutes: 60
+    env:
+      ASC_KEY_PATH: ${{ runner.temp }}/asc.p8
+      ARCHIVE: ${{ runner.temp }}/Waffi.xcarchive
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Select the newest Xcode 26
+        run: |
+          XCODE=$(ls -d /Applications/Xcode_26*.app | grep -vi beta | sort -V | tail -1)
+          sudo xcode-select -s "$XCODE"
+          xcodebuild -version
+
+      - run: brew install xcodegen
+      - run: xcodegen generate
+
+      - name: Write the App Store Connect key
+        env:
+          ASC_KEY_P8: ${{ secrets.ASC_KEY_P8 }}
+        run: |
+          umask 077
+          printf '%s\n' "$ASC_KEY_P8" > "$ASC_KEY_PATH"
+
+      - name: Archive
+        env:
+          TEAM: ${{ secrets.APPLE_TEAM_ID }}
+          KEY_ID: ${{ secrets.ASC_KEY_ID }}
+          ISSUER_ID: ${{ secrets.ASC_ISSUER_ID }}
+        run: |
+          xcodebuild archive \
+            -project Waffi.xcodeproj -scheme Waffi -configuration Release \
+            -destination 'generic/platform=iOS' \
+            -archivePath "$ARCHIVE" \
+            DEVELOPMENT_TEAM="$TEAM" \
+            CURRENT_PROJECT_VERSION=${{ github.run_number }} \
+            -allowProvisioningUpdates \
+            -authenticationKeyPath "$ASC_KEY_PATH" \
+            -authenticationKeyID "$KEY_ID" \
+            -authenticationKeyIssuerID "$ISSUER_ID"
+
+      # Before the upload, so an oversize Clip never reaches App Store Connect.
+      - name: App Clip size (limit 15 MB)
+        run: |
+          KB=$(du -sk "$ARCHIVE/Products/Applications/Waffi.app/AppClips/WaffiClip.app" | cut -f1)
+          echo "App Clip uncompressed size: ${KB} KB"
+          if [ "$KB" -gt 15360 ]; then echo "App Clip is over 15 MB"; exit 1; fi
+
+      - name: Export and upload to App Store Connect
+        env:
+          TEAM: ${{ secrets.APPLE_TEAM_ID }}
+          KEY_ID: ${{ secrets.ASC_KEY_ID }}
+          ISSUER_ID: ${{ secrets.ASC_ISSUER_ID }}
+        run: |
+          cat > "$RUNNER_TEMP/ExportOptions.plist" <<PLIST
+          <?xml version="1.0" encoding="UTF-8"?>
+          <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+          <plist version="1.0">
+          <dict>
+            <key>method</key><string>app-store-connect</string>
+            <key>destination</key><string>upload</string>
+            <key>teamID</key><string>${TEAM}</string>
+            <key>signingStyle</key><string>automatic</string>
+            <key>manageAppVersionAndBuildNumber</key><false/>
+            <key>uploadSymbols</key><true/>
+          </dict>
+          </plist>
+          PLIST
+          xcodebuild -exportArchive \
+            -archivePath "$ARCHIVE" \
+            -exportPath "$RUNNER_TEMP/export" \
+            -exportOptionsPlist "$RUNNER_TEMP/ExportOptions.plist" \
+            -allowProvisioningUpdates \
+            -authenticationKeyPath "$ASC_KEY_PATH" \
+            -authenticationKeyID "$KEY_ID" \
+            -authenticationKeyIssuerID "$ISSUER_ID"
+
+      - name: Delete the App Store Connect key
+        if: always()
+        run: rm -f "$ASC_KEY_PATH"
