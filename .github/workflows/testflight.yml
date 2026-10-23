@@ -37,22 +37,14 @@ jobs:
           umask 077
           printf '%s\n' "$ASC_KEY_P8" > "$ASC_KEY_PATH"
 
+      # The team has no registered devices, so Xcode cannot make the development profiles an
+      # automatically signed archive needs. Archive ad-hoc signed (entitlements are embedded),
+      # and let the export re-sign for the App Store with automatic signing and the API key.
       - name: Archive
         env:
           TEAM: ${{ secrets.APPLE_TEAM_ID }}
-          KEY_ID: ${{ secrets.ASC_KEY_ID }}
-          ISSUER_ID: ${{ secrets.ASC_ISSUER_ID }}
         run: |
-          xcodebuild archive \
-            -project Waffi.xcodeproj -scheme Waffi -configuration Release \
-            -destination 'generic/platform=iOS' \
-            -archivePath "$ARCHIVE" \
-            DEVELOPMENT_TEAM="$TEAM"             CODE_SIGN_IDENTITY="Apple Distribution" \
-            CURRENT_PROJECT_VERSION=${{ github.run_number }} \
-            -allowProvisioningUpdates \
-            -authenticationKeyPath "$ASC_KEY_PATH" \
-            -authenticationKeyID "$KEY_ID" \
-            -authenticationKeyIssuerID "$ISSUER_ID"
+          xcodebuild archive             -project Waffi.xcodeproj -scheme Waffi -configuration Release             -destination 'generic/platform=iOS'             -archivePath "$ARCHIVE"             DEVELOPMENT_TEAM="$TEAM"             CURRENT_PROJECT_VERSION=${{ github.run_number }}             CODE_SIGN_STYLE=Manual CODE_SIGN_IDENTITY="-"
 
       # Before the upload, so an oversize Clip never reaches App Store Connect.
       - name: App Clip size (limit 15 MB)
