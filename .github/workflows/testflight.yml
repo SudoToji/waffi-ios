@@ -82,6 +82,13 @@ jobs:
             -authenticationKeyID "$KEY_ID" \
             -authenticationKeyIssuerID "$ISSUER_ID"
 
+      - name: DIAG distribution logs
+        if: failure()
+        run: |
+          for f in $(find /var/folders -name "*.log" -path "*xcdistributionlogs*" 2>/dev/null); do
+            echo "=== $f"; grep -iE "error|fail|regist|profile|clip|status|code" "$f" | grep -viE "key|token" | cut -c1-400 | tail -60
+          done
+
       - name: DIAG entitlements
         run: |
           cd "$RUNNER_TEMP/export" && ls
