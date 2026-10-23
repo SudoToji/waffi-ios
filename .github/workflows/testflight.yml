@@ -47,7 +47,7 @@ jobs:
             -project Waffi.xcodeproj -scheme Waffi -configuration Release \
             -destination 'generic/platform=iOS' \
             -archivePath "$ARCHIVE" \
-            DEVELOPMENT_TEAM="$TEAM" \
+            DEVELOPMENT_TEAM="$TEAM"             CODE_SIGN_IDENTITY="Apple Distribution" \
             CURRENT_PROJECT_VERSION=${{ github.run_number }} \
             -allowProvisioningUpdates \
             -authenticationKeyPath "$ASC_KEY_PATH" \
