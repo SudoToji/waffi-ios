@@ -44,7 +44,7 @@ jobs:
         env:
           TEAM: ${{ secrets.APPLE_TEAM_ID }}
         run: |
-          xcodebuild archive             -project Waffi.xcodeproj -scheme Waffi -configuration Release             -destination 'generic/platform=iOS'             -archivePath "$ARCHIVE"             DEVELOPMENT_TEAM="$TEAM"             CURRENT_PROJECT_VERSION=${{ github.run_number }}             CODE_SIGN_STYLE=Manual CODE_SIGN_IDENTITY="-"
+          xcodebuild archive             -project Waffi.xcodeproj -scheme Waffi -configuration Release             -destination 'generic/platform=iOS'             -archivePath "$ARCHIVE"             DEVELOPMENT_TEAM="$TEAM"             CURRENT_PROJECT_VERSION=${{ github.run_number }}             CODE_SIGNING_ALLOWED=NO
 
       # Before the upload, so an oversize Clip never reaches App Store Connect.
       - name: App Clip size (limit 15 MB)
@@ -65,7 +65,7 @@ jobs:
           <plist version="1.0">
           <dict>
             <key>method</key><string>app-store-connect</string>
-            <key>destination</key><string>upload</string>
+            <key>destination</key><string>export</string>
             <key>teamID</key><string>${TEAM}</string>
             <key>signingStyle</key><string>automatic</string>
             <key>manageAppVersionAndBuildNumber</key><false/>
@@ -81,6 +81,14 @@ jobs:
             -authenticationKeyPath "$ASC_KEY_PATH" \
             -authenticationKeyID "$KEY_ID" \
             -authenticationKeyIssuerID "$ISSUER_ID"
+
+      - name: DIAG entitlements
+        run: |
+          cd "$RUNNER_TEMP/export" && ls
+          unzip -q *.ipa -d x
+          for a in x/Payload/Waffi.app x/Payload/Waffi.app/AppClips/WaffiClip.app x/Payload/Waffi.app/PlugIns/WaffiLiveActivity.appex x/Payload/Waffi.app/AppClips/WaffiClip.app/PlugIns/WaffiClipLiveActivity.appex; do
+            echo "== $a"; codesign -d --entitlements - "$a" 2>&1 | head -40
+          done
 
       - name: Delete the App Store Connect key
         if: always()
