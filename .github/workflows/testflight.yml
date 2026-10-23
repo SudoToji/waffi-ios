@@ -13,11 +13,13 @@ jobs:
   upload:
     runs-on: macos-26
     timeout-minutes: 60
-    env:
-      ASC_KEY_PATH: ${{ runner.temp }}/asc.p8
-      ARCHIVE: ${{ runner.temp }}/Waffi.xcarchive
     steps:
       - uses: actions/checkout@v4
+
+      - name: Paths
+        run: |
+          echo "ASC_KEY_PATH=$RUNNER_TEMP/asc.p8" >> "$GITHUB_ENV"
+          echo "ARCHIVE=$RUNNER_TEMP/Waffi.xcarchive" >> "$GITHUB_ENV"
 
       - name: Select the newest Xcode 26
         run: |
