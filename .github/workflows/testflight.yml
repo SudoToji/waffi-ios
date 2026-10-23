@@ -89,13 +89,17 @@ jobs:
             echo "=== $f"; grep -iE "error|fail|regist|profile|clip|status|code" "$f" | grep -viE "key|token" | cut -c1-400 | tail -60
           done
 
-      - name: DIAG entitlements
+      - name: DIAG archive
+        if: always()
         run: |
-          cd "$RUNNER_TEMP/export" && ls
-          unzip -q *.ipa -d x
-          for a in x/Payload/Waffi.app x/Payload/Waffi.app/AppClips/WaffiClip.app x/Payload/Waffi.app/PlugIns/WaffiLiveActivity.appex x/Payload/Waffi.app/AppClips/WaffiClip.app/PlugIns/WaffiClipLiveActivity.appex; do
-            echo "== $a"; codesign -d --entitlements - "$a" 2>&1 | head -40
+          find "$ARCHIVE" -name "*.xcent" -o -name "embedded.mobileprovision" | head
+          for a in Waffi.app Waffi.app/AppClips/WaffiClip.app; do
+            echo "== $a"; codesign -d --entitlements - "$ARCHIVE/Products/Applications/$a" 2>&1 | head -20
           done
+          /usr/libexec/PlistBuddy -c Print "$ARCHIVE/Info.plist"
+          DD=$(ls -d ~/Library/Developer/Xcode/DerivedData/Waffi-*)
+          find "$DD" -name "*.xcent" | head
+          for f in $(find "$DD" -name "WaffiClip.app.xcent" | head -1); do cat "$f"; done
 
       - name: Delete the App Store Connect key
         if: always()
