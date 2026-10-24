@@ -44,6 +44,7 @@ targets:
         UIRequiresFullScreen: true
         NSSupportsLiveActivities: true
         NSSupportsLiveActivitiesFrequentUpdates: true
+        NSCameraUsageDescription: "Waffi uses the camera to scan a Customer's Card QR code." # localized in Resources/InfoPlist.xcstrings
         ITSAppUsesNonExemptEncryption: false
     entitlements:
       path: App/Waffi.entitlements

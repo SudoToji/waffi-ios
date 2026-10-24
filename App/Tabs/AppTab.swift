@@ -26,15 +26,10 @@ enum AppTab: String, CaseIterable, Identifiable {
         }
     }
 
-    /// What a Staff Member may do when the Owner never changed it (`DEFAULT_STAFF_PERMISSIONS`).
-    private static let defaultPermissions = ["loyalty.earn", "loyalty.redeem"]
-
     /// The tabs this person sees. `features` is `GET /api/addons`: a tab behind a Feature switch that is off is left out, with no upgrade hint.
     static func visible(for user: AppAccount.User, features: [String: Bool]) -> [AppTab] {
         let manager = user.role == "owner" || user.role == "manager"
-        func may(_ permission: String) -> Bool {
-            manager || (user.permissions ?? defaultPermissions).contains(permission)
-        }
+        func may(_ permission: String) -> Bool { user.may(permission) }
         return allCases.filter { tab in
             switch tab {
             case .overview: manager

@@ -34,7 +34,7 @@ actor ApiClient {
         try decode(await authorized(path, query: query, method: "GET", body: nil))
     }
 
-    func post<T: Decodable>(_ path: String, json: [String: String]? = nil) async throws -> T {
+    func post<T: Decodable>(_ path: String, json: (any Encodable)? = nil) async throws -> T {
         try decode(await authorized(path, query: [], method: "POST", body: json))
     }
 
@@ -85,7 +85,7 @@ actor ApiClient {
         do { return try decoder.decode(T.self, from: data) } catch { throw ApiError(code: "INVALID_RESPONSE") }
     }
 
-    private func authorized(_ path: String, query: [URLQueryItem], method: String, body: [String: String]?) async throws -> Data {
+    private func authorized(_ path: String, query: [URLQueryItem], method: String, body: (any Encodable)?) async throws -> Data {
         do {
             guard let used = tokens?.access else { throw ApiError(code: "UNAUTHENTICATED") }
             do {
@@ -129,11 +129,13 @@ actor ApiClient {
     }
 
     private func send(
-        _ path: String, query: [URLQueryItem] = [], method: String, body: [String: String]? = nil, bearer: String? = nil
+        _ path: String, query: [URLQueryItem] = [], method: String, body: (any Encodable)? = nil, bearer: String? = nil
     ) async throws -> Data {
         var components = URLComponents(url: ServerOrigin.current, resolvingAgainstBaseURL: false)!
         components.path = "/" + path
         components.queryItems = query.isEmpty ? nil : query
+        // A `+` (a phone number) stays a plus: the server reads an unescaped one as a space.
+        components.percentEncodedQuery = components.percentEncodedQuery?.replacingOccurrences(of: "+", with: "%2B")
         var request = URLRequest(url: components.url!)
         request.httpMethod = method
         request.setValue("application/json", forHTTPHeaderField: "Accept")

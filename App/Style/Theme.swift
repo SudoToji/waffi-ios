@@ -18,6 +18,8 @@ enum Theme {
     /// The full-screen QR is the brand green in every appearance, with white on it.
     static let brand = Color(hex: 0x2E5A43)
     static let onBrandSecondary = Color(hex: 0xCFE3D6)
+    /// The ember accent of the logo: the next stamp and the scan line.
+    static let ember = Color(hex: 0xF26A4B)
 }
 
 private extension Color {

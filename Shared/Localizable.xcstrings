@@ -49,6 +49,54 @@
         }
       }
     },
+    "%lld %@ to go for %@": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "متبقّي %1$lld %2$@ للحصول على %3$@"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld %@ to go for %@"
+          }
+        }
+      }
+    },
+    "%lld more to go": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "متبقّي %lld"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld more to go"
+          }
+        }
+      }
+    },
+    "+%@ %@. Balance: %@ %@.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "+%1$@ %2$@. الرصيد: %3$@ %4$@."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "+%@ %@. Balance: %@ %@."
+          }
+        }
+      }
+    },
     "+%@ this week": {
       "localizations": {
         "ar": {
@@ -113,6 +161,38 @@
         }
       }
     },
+    "Add one stamp": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إضافة ختم واحد"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Add one stamp"
+          }
+        }
+      }
+    },
+    "Add one stamp to this Customer's Card. Confirm only after a qualifying purchase.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إضافة ختم واحد إلى بطاقة هذا العميل. أكّد فقط بعد عملية شراء مؤهلة."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Add one stamp to this Customer's Card. Confirm only after a qualifying purchase."
+          }
+        }
+      }
+    },
     "Adjustment": {
       "localizations": {
         "ar": {
@@ -145,6 +225,166 @@
         }
       }
     },
+    "Allow the camera in Settings to scan Card QR codes. You can still search or type a Manual Code.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اسمح باستخدام الكاميرا من الإعدادات لمسح رمز QR على البطاقات. يمكنك أيضًا البحث عن العميل أو كتابة رمز البطاقة."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Allow the camera in Settings to scan Card QR codes. You can still search or type a Manual Code."
+          }
+        }
+      }
+    },
+    "Already got %lld stamps today": {
+      "localizations": {
+        "ar": {
+          "variations": {
+            "plural": {
+              "zero": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "لم يحصل على أي ختم اليوم"
+                }
+              },
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "حصل بالفعل على ختم اليوم"
+                }
+              },
+              "two": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "حصل بالفعل على ختمين اليوم"
+                }
+              },
+              "few": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "حصل بالفعل على %lld أختام اليوم"
+                }
+              },
+              "many": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "حصل بالفعل على %lld ختمًا اليوم"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "حصل بالفعل على %lld ختم اليوم"
+                }
+              }
+            }
+          }
+        },
+        "en": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Already got %lld stamp today"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Already got %lld stamps today"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Already redeemed": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تم الاستبدال سابقاً"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Already redeemed"
+          }
+        }
+      }
+    },
+    "Already redeemed %lld Rewards today": {
+      "localizations": {
+        "ar": {
+          "variations": {
+            "plural": {
+              "zero": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "لم يستبدل أي مكافأة اليوم"
+                }
+              },
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "استبدل مكافأة بالفعل اليوم"
+                }
+              },
+              "two": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "استبدل مكافأتين بالفعل اليوم"
+                }
+              },
+              "few": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "استبدل %lld مكافآت بالفعل اليوم"
+                }
+              },
+              "many": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "استبدل %lld مكافأة بالفعل اليوم"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "استبدل %lld مكافأة بالفعل اليوم"
+                }
+              }
+            }
+          }
+        },
+        "en": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Already redeemed a Reward today"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Already redeemed %lld Rewards today"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "At least 8 characters, with an uppercase letter, a lowercase letter and a number.": {
       "localizations": {
         "ar": {
@@ -157,6 +397,22 @@
           "stringUnit": {
             "state": "translated",
             "value": "At least 8 characters, with an uppercase letter, a lowercase letter and a number."
+          }
+        }
+      }
+    },
+    "Award purchase points": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إضافة نقاط الشراء"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Award purchase points"
           }
         }
       }
@@ -193,6 +449,38 @@
         }
       }
     },
+    "Camera access is off": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الوصول إلى الكاميرا متوقف"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Camera access is off"
+          }
+        }
+      }
+    },
+    "Camera on": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الكاميرا تعمل"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Camera on"
+          }
+        }
+      }
+    },
     "Campaigns": {
       "localizations": {
         "ar": {
@@ -209,6 +497,70 @@
         }
       }
     },
+    "Cancel": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إلغاء"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cancel"
+          }
+        }
+      }
+    },
+    "Card %@": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "بطاقة %@"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Card %@"
+          }
+        }
+      }
+    },
+    "Card Tier %@": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "فئة البطاقة %@"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Card Tier %@"
+          }
+        }
+      }
+    },
+    "Cashback": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "استرداد نقدي"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cashback"
+          }
+        }
+      }
+    },
     "Change Branch": {
       "localizations": {
         "ar": {
@@ -221,6 +573,22 @@
           "stringUnit": {
             "state": "translated",
             "value": "Change Branch"
+          }
+        }
+      }
+    },
+    "Choose from %lld Cards": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اختر من %lld بطاقات"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Choose from %lld Cards"
           }
         }
       }
@@ -305,6 +673,54 @@
         }
       }
     },
+    "Confirm %lld qualifying purchases. This adds %lld stamps.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أكد %1$lld عمليات شراء مؤهلة. ستُضاف %2$lld أختام."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Confirm %lld qualifying purchases. This adds %lld stamps."
+          }
+        }
+      }
+    },
+    "Confirm one qualifying purchase or check-in. This adds one unit.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أكد عملية شراء أو زيارة مؤهلة واحدة. ستُضاف وحدة واحدة."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Confirm one qualifying purchase or check-in. This adds one unit."
+          }
+        }
+      }
+    },
+    "Confirm transaction": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تأكيد العملية"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Confirm transaction"
+          }
+        }
+      }
+    },
     "Connection lost. Trying again…": {
       "comment": "App Clip: a read failed, it retries by itself",
       "localizations": {
@@ -350,6 +766,22 @@
           "stringUnit": {
             "state": "translated",
             "value": "Current password"
+          }
+        }
+      }
+    },
+    "Custom reward": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مكافأة خاصة"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Custom reward"
           }
         }
       }
@@ -450,6 +882,70 @@
         }
       }
     },
+    "Earn %lld stamps": {
+      "localizations": {
+        "ar": {
+          "variations": {
+            "plural": {
+              "zero": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "اكسب %lld ختم"
+                }
+              },
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "اكسب ختمًا واحدًا"
+                }
+              },
+              "two": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "اكسب ختمين"
+                }
+              },
+              "few": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "اكسب %lld أختام"
+                }
+              },
+              "many": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "اكسب %lld ختمًا"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "اكسب %lld ختم"
+                }
+              }
+            }
+          }
+        },
+        "en": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Earn %lld stamp"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Earn %lld stamps"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "Earn & redeem": {
       "localizations": {
         "ar": {
@@ -482,6 +978,38 @@
         }
       }
     },
+    "Earned %@ %@": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تمت إضافة %1$@ %2$@"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Earned %@ %@"
+          }
+        }
+      }
+    },
+    "Eligible purchase amount (EGP)": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "قيمة الشراء المؤهلة (جنيه مصري)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eligible purchase amount (EGP)"
+          }
+        }
+      }
+    },
     "Email": {
       "localizations": {
         "ar": {
@@ -494,6 +1022,38 @@
           "stringUnit": {
             "state": "translated",
             "value": "Email"
+          }
+        }
+      }
+    },
+    "Enter Manual Code": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أدخل رمز البطاقة"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enter Manual Code"
+          }
+        }
+      }
+    },
+    "Enter a valid eligible purchase amount, up to EGP 1,000,000.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أدخل قيمة شراء صحيحة لا تزيد عن مليون جنيه."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enter a valid eligible purchase amount, up to EGP 1,000,000."
           }
         }
       }
@@ -514,6 +1074,22 @@
         }
       }
     },
+    "Enter six card digits, a Waffi QR code, or a phone number. Local numbers use Egypt; include +country code for other countries.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أدخل رقم البطاقة من ٦ أرقام أو رمز QR أو رقم الهاتف. الأرقام المحلية لمصر؛ أضف رمز الدولة + للدول الأخرى."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enter six card digits, a Waffi QR code, or a phone number. Local numbers use Egypt; include +country code for other countries."
+          }
+        }
+      }
+    },
     "Entry undone": {
       "localizations": {
         "ar": {
@@ -526,6 +1102,54 @@
           "stringUnit": {
             "state": "translated",
             "value": "Entry undone"
+          }
+        }
+      }
+    },
+    "Expires %@": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تنتهي %@"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Expires %@"
+          }
+        }
+      }
+    },
+    "Find customer": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "البحث عن العميل"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Find customer"
+          }
+        }
+      }
+    },
+    "Fixed discount": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "خصم ثابت"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fixed discount"
           }
         }
       }
@@ -578,6 +1202,22 @@
         }
       }
     },
+    "Free item": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "منتج مجاني"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Free item"
+          }
+        }
+      }
+    },
     "Gift expired": {
       "localizations": {
         "ar": {
@@ -606,6 +1246,22 @@
           "stringUnit": {
             "state": "translated",
             "value": "Gift saved"
+          }
+        }
+      }
+    },
+    "Give the customer %@. Redeem one saved gift without changing their current stamps or points. Fulfill it only after success is shown.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تسليم %@ للعميل واستبدال هدية محفوظة واحدة دون تغيير الأختام أو النقاط الحالية. سلّم الهدية بعد نجاح العملية فقط."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Give the customer %@. Redeem one saved gift without changing their current stamps or points. Fulfill it only after success is shown."
           }
         }
       }
@@ -658,6 +1314,54 @@
         }
       }
     },
+    "Google Wallet is up to date": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "بطاقة Google Wallet محدثة"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Google Wallet is up to date"
+          }
+        }
+      }
+    },
+    "Google Wallet update delayed. We will retry automatically.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تأخر تحديث Google Wallet. سنعيد المحاولة تلقائيًا."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Google Wallet update delayed. We will retry automatically."
+          }
+        }
+      }
+    },
+    "Google Wallet update pending": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تحديث Google Wallet قيد الانتظار"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Google Wallet update pending"
+          }
+        }
+      }
+    },
     "Hide password": {
       "localizations": {
         "ar": {
@@ -687,6 +1391,54 @@
           "stringUnit": {
             "state": "translated",
             "value": "Live Activities are off for Waffi, so your order will not show on the lock screen. Keep this screen open, or turn them on in Settings."
+          }
+        }
+      }
+    },
+    "Locked": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مقفلة"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Locked"
+          }
+        }
+      }
+    },
+    "Loyalty added": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تمت إضافة الولاء"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Loyalty added"
+          }
+        }
+      }
+    },
+    "Manual Code": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "رمز البطاقة"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Manual Code"
           }
         }
       }
@@ -723,6 +1475,22 @@
         }
       }
     },
+    "Membership level required": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مستوى عضوية مطلوب"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Membership level required"
+          }
+        }
+      }
+    },
     "New password": {
       "localizations": {
         "ar": {
@@ -751,6 +1519,54 @@
           "stringUnit": {
             "state": "translated",
             "value": "No Branch is available. Ask the Owner to assign you to one."
+          }
+        }
+      }
+    },
+    "No Card available": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لا توجد بطاقة متاحة"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No Card available"
+          }
+        }
+      }
+    },
+    "No Customers match. Try another name or phone.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لا يوجد عملاء مطابقون. جرّب اسمًا أو هاتفًا آخر."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No Customers match. Try another name or phone."
+          }
+        }
+      }
+    },
+    "No Rewards are ready yet. Keep earning to unlock one.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لا توجد مكافآت جاهزة بعد. واصل الكسب للوصول إلى مكافأة."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No Rewards are ready yet. Keep earning to unlock one."
           }
         }
       }
@@ -835,6 +1651,22 @@
         }
       }
     },
+    "Number of stamps": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "عدد الأختام"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Number of stamps"
+          }
+        }
+      }
+    },
     "Number pad": {
       "localizations": {
         "ar": {
@@ -851,6 +1683,38 @@
         }
       }
     },
+    "Off": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إيقاف"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Off"
+          }
+        }
+      }
+    },
+    "On": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تشغيل"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "On"
+          }
+        }
+      }
+    },
     "Only for Business teams. Customers just scan the QR.": {
       "localizations": {
         "ar": {
@@ -863,6 +1727,22 @@
           "stringUnit": {
             "state": "translated",
             "value": "Only for Business teams. Customers just scan the QR."
+          }
+        }
+      }
+    },
+    "Open Settings": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "فتح الإعدادات"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open Settings"
           }
         }
       }
@@ -1028,6 +1908,38 @@
         }
       }
     },
+    "Percentage discount": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "خصم بالنسبة"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Percentage discount"
+          }
+        }
+      }
+    },
+    "Point at the Customer's Card QR": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "وجّه الكاميرا نحو رمز QR على بطاقة العميل"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Point at the Customer's Card QR"
+          }
+        }
+      }
+    },
     "Preparing your order": {
       "comment": "Live Activity status line while the order is being prepared",
       "localizations": {
@@ -1093,6 +2005,22 @@
         }
       }
     },
+    "Ready to redeem": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "جاهزة للاستبدال"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ready to redeem"
+          }
+        }
+      }
+    },
     "Ready · %lld": {
       "localizations": {
         "ar": {
@@ -1142,6 +2070,134 @@
         }
       }
     },
+    "Recently served": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "آخر من تمت خدمتهم"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recently served"
+          }
+        }
+      }
+    },
+    "Record an eligible purchase of EGP %@ and award points at the configured rate.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تسجيل شراء مؤهل بقيمة %@ جنيه وإضافة النقاط بالمعدل المحدد."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Record an eligible purchase of EGP %@ and award points at the configured rate."
+          }
+        }
+      }
+    },
+    "Record one visit": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تسجيل زيارة واحدة"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Record one visit"
+          }
+        }
+      }
+    },
+    "Record one visit. No purchase amount needed.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تسجيل زيارة واحدة دون إدخال قيمة مشتريات."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Record one visit. No purchase amount needed."
+          }
+        }
+      }
+    },
+    "Redeem": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "استبدال"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Redeem"
+          }
+        }
+      }
+    },
+    "Redeem %@": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "استبدال %@"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Redeem %@"
+          }
+        }
+      }
+    },
+    "Redeem %@ and deduct %lld from the balance. Fulfill the gift only after success is shown.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "استبدال %1$@ وخصم %2$lld من الرصيد. سلّم الهدية فقط بعد ظهور نجاح المعاملة."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Redeem %@ and deduct %lld from the balance. Fulfill the gift only after success is shown."
+          }
+        }
+      }
+    },
+    "Redeem %@ once. The balance stays unchanged. Fulfill the gift only after success is shown.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "استبدال %@ مرة واحدة مع الاحتفاظ بالرصيد. سلّم الهدية بعد ظهور نجاح العملية فقط."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Redeem %@ once. The balance stays unchanged. Fulfill the gift only after success is shown."
+          }
+        }
+      }
+    },
     "Redeemed": {
       "localizations": {
         "ar": {
@@ -1170,6 +2226,54 @@
           "stringUnit": {
             "state": "translated",
             "value": "Redeemed %@"
+          }
+        }
+      }
+    },
+    "Redeemed. Balance: %@ %@.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تم الاستبدال. الرصيد: %1$@ %2$@."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Redeemed. Balance: %@ %@."
+          }
+        }
+      }
+    },
+    "Refresh status": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تحديث الحالة"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Refresh status"
+          }
+        }
+      }
+    },
+    "Remove one stamp": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حذف ختم واحد"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Remove one stamp"
           }
         }
       }
@@ -1206,6 +2310,70 @@
         }
       }
     },
+    "Retry same operation": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إعادة محاولة نفس العملية"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Retry same operation"
+          }
+        }
+      }
+    },
+    "Return to card lookup": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "العودة للبحث عن البطاقة"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Return to card lookup"
+          }
+        }
+      }
+    },
+    "Reward redeemed": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تم استبدال المكافأة"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reward redeemed"
+          }
+        }
+      }
+    },
+    "Rewards": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "المكافآت"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rewards"
+          }
+        }
+      }
+    },
     "Rewards redeemed": {
       "localizations": {
         "ar": {
@@ -1234,6 +2402,38 @@
           "stringUnit": {
             "state": "translated",
             "value": "Save password"
+          }
+        }
+      }
+    },
+    "Saved Gifts available: %lld": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الهدايا المحفوظة المتاحة: %lld"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Saved Gifts available: %lld"
+          }
+        }
+      }
+    },
+    "Saved gift": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "هدية محفوظة"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Saved gift"
           }
         }
       }
@@ -1271,6 +2471,38 @@
         }
       }
     },
+    "Search by phone or name": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ابحث بالهاتف أو الاسم"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Search by phone or name"
+          }
+        }
+      }
+    },
+    "Search for the Customer or type their Manual Code instead.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ابحث عن العميل أو اكتب رمز بطاقته بدلًا من ذلك."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Search for the Customer or type their Manual Code instead."
+          }
+        }
+      }
+    },
     "Server": {
       "localizations": {
         "ar": {
@@ -1299,6 +2531,22 @@
           "stringUnit": {
             "state": "translated",
             "value": "Show QR"
+          }
+        }
+      }
+    },
+    "Show more": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "عرض المزيد"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show more"
           }
         }
       }
@@ -1383,6 +2631,38 @@
         }
       }
     },
+    "Six-digit Card number or international phone": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "رقم البطاقة من ستة أرقام أو هاتف دولي"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Six-digit Card number or international phone"
+          }
+        }
+      }
+    },
+    "Stamps to add": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "عدد الأختام"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stamps to add"
+          }
+        }
+      }
+    },
     "Support": {
       "localizations": {
         "ar": {
@@ -1431,6 +2711,70 @@
         }
       }
     },
+    "The last operation needs confirmation from the server. Retry it safely before starting another.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تحتاج العملية السابقة إلى تأكيد من الخادم. أعد المحاولة بأمان قبل بدء عملية جديدة."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The last operation needs confirmation from the server. Retry it safely before starting another."
+          }
+        }
+      }
+    },
+    "The short code printed under the Card's QR": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الرمز القصير المطبوع أسفل رمز QR للبطاقة"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The short code printed under the Card's QR"
+          }
+        }
+      }
+    },
+    "This iPhone cannot scan QR codes here": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لا يستطيع هذا الآيفون مسح رموز QR هنا"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This iPhone cannot scan QR codes here"
+          }
+        }
+      }
+    },
+    "This reward cannot be redeemed": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لا يمكن استبدال هذه المكافأة"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This reward cannot be redeemed"
+          }
+        }
+      }
+    },
     "This ticket has ended": {
       "comment": "App Clip: the ticket was collected, ended or is unknown",
       "localizations": {
@@ -1444,6 +2788,22 @@
           "stringUnit": {
             "state": "translated",
             "value": "This ticket has ended"
+          }
+        }
+      }
+    },
+    "Torch": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "المصباح"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Torch"
           }
         }
       }
@@ -1465,6 +2825,22 @@
         }
       }
     },
+    "Unclaimed gifts: %lld": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الهدايا غير المستلمة: %lld"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unclaimed gifts: %lld"
+          }
+        }
+      }
+    },
     "Up %@ from last week": {
       "localizations": {
         "ar": {
@@ -1477,6 +2853,22 @@
           "stringUnit": {
             "state": "translated",
             "value": "Up %@ from last week"
+          }
+        }
+      }
+    },
+    "Use up to two decimal places. Required for points earning and monetary rewards.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "استخدم منزلتين عشريتين كحد أقصى. مطلوبة للنقاط والمكافآت المالية."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Use up to two decimal places. Required for points earning and monetary rewards."
           }
         }
       }
@@ -1593,6 +2985,22 @@
         }
       }
     },
+    "You have view-only access. Ask your owner for permission to add progress or redeem rewards.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لديك صلاحية العرض فقط. اطلب من المالك صلاحية الإضافة أو استبدال المكافآت."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You have view-only access. Ask your owner for permission to add progress or redeem rewards."
+          }
+        }
+      }
+    },
     "Your order number": {
       "comment": "App Clip: label above the order number",
       "localizations": {
@@ -1677,6 +3085,22 @@
         }
       },
       "extractionState": "manual"
+    },
+    "error.CARD_NOT_FOUND": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لم يتم العثور على بطاقة نشطة في هذا النشاط."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No active card found in this business."
+          }
+        }
+      }
     },
     "error.DATABASE_UNAVAILABLE": {
       "localizations": {
@@ -1797,6 +3221,38 @@
       },
       "extractionState": "manual"
     },
+    "error.NOT_FOUND": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "هذا العنصر غير موجود. حدّث الصفحة وحاول مرة أخرى."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This item no longer exists. Refresh and try again."
+          }
+        }
+      }
+    },
+    "error.OPERATION_CONFLICT": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "استُخدم رقم العملية لطلب مختلف."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This operation ID was already used for a different request."
+          }
+        }
+      }
+    },
     "error.PAGER_NUMBER_TAKEN": {
       "localizations": {
         "ar": {
@@ -1882,6 +3338,22 @@
       },
       "extractionState": "manual"
     },
+    "error.PHONE_MULTIPLE_CARDS": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يرتبط هذا الهاتف بأكثر من بطاقة. ابحث برقم البطاقة أو رمز QR."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This phone has multiple cards. Search using the card number or QR code."
+          }
+        }
+      }
+    },
     "error.PLAN_REQUIRED": {
       "localizations": {
         "ar": {
@@ -1915,6 +3387,38 @@
         }
       },
       "extractionState": "manual"
+    },
+    "error.REWARD_NOT_FOUND": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لم نتمكن من العثور على هذه المكافأة."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "That reward could not be found."
+          }
+        }
+      }
+    },
+    "error.REWARD_UNAVAILABLE": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "هذه المكافأة غير متاحة الآن. ابحث عن البطاقة مجدداً."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This reward is no longer eligible. Look up the card again."
+          }
+        }
+      }
     },
     "error.SUBSCRIPTION_ENDED": {
       "localizations": {
@@ -2000,6 +3504,22 @@
         }
       },
       "extractionState": "manual"
+    },
+    "error.WORKER_STALLED": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "وافي غير متاح مؤقتاً. حاول مرة أخرى بعد قليل."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Waffi is temporarily unavailable. Please try again in a moment."
+          }
+        }
+      }
     }
   },
   "version": "1.0"

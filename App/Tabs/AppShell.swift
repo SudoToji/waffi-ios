@@ -55,7 +55,8 @@ struct AppShell: View {
         switch tab {
         case .overview: OverviewView(session: session, account: account)
         case .pager: NavigationStack { StaffPagerView(session: session, account: account) }
-        case .earn, .customers, .campaigns: ComingSoonView(tab: tab, session: session, account: account)
+        case .earn: EarnView(session: session, account: account)
+        case .customers, .campaigns: ComingSoonView(tab: tab, session: session, account: account)
         }
     }
 

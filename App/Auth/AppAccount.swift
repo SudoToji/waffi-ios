@@ -22,6 +22,16 @@ struct AppAccount: Decodable, Equatable {
     let business: Business
 }
 
+extension AppAccount.User {
+    /// What a Staff Member may do when the Owner never changed it (`DEFAULT_STAFF_PERMISSIONS`).
+    private static let defaultPermissions = ["loyalty.earn", "loyalty.redeem"]
+
+    /// `hasStaffPermission`: an Owner or Manager may do everything, a Staff Member what their permissions list.
+    func may(_ permission: String) -> Bool {
+        role == "owner" || role == "manager" || (permissions ?? Self.defaultPermissions).contains(permission)
+    }
+}
+
 /// The token pair that `/api/auth/app/login`, `refresh` and `change-password` answer with (`AppSignIn`).
 struct AppSignIn: Decodable {
     let accessToken: String

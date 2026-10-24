@@ -1,0 +1,22 @@
+{
+  "sourceLanguage": "en",
+  "strings": {
+    "NSCameraUsageDescription": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Waffi uses the camera to scan a Customer's Card QR code."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يستخدم وافي الكاميرا لمسح رمز QR على بطاقة العميل."
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}

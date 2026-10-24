@@ -33,7 +33,8 @@ struct OverviewView: View {
     // MARK: Header
 
     private var header: some View {
-        HStack(alignment: .top) {
+        HStack(alignment: .top, spacing: 12) {
+            WaffiMark(size: 40).padding(.top, 2)
             VStack(alignment: .leading, spacing: 0) {
                 greeting.font(.subheadline).foregroundStyle(Theme.secondaryText)
                 branchPicker
