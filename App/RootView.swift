@@ -26,6 +26,7 @@ struct RootView: View {
                 NavigationStack { StaffPagerView(session: session, account: account) }
             }
         }
+        .tint(Theme.accent)
         .task { await session.start() }
         .fullScreenCover(item: $ticket) { model in
             NavigationStack {

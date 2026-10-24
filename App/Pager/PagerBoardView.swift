@@ -3,21 +3,15 @@ import SwiftUI
 /// One Branch's board: the number pad on top, then the Waiting and Ready lists, read again every 5 seconds.
 struct PagerBoardView: View {
     @Bindable var model: StaffPagerModel
+    let businessName: String
     @Environment(\.scenePhase) private var scenePhase
     @State private var number = ""
+    /// `waiting` or `ready`.
+    @State private var tab = "waiting"
 
     var body: some View {
         ScrollView {
-            VStack(spacing: 16) {
-                Text("Type the order number, show the QR to your customer, and tap Ready when the order is done.")
-                    .font(.subheadline)
-                    .foregroundStyle(.secondary)
-                    .multilineTextAlignment(.center)
-                if model.branches.count > 1, let branch = model.branch {
-                    Button("Serving at \(branch.name)") { model.changeBranch() }
-                        .buttonStyle(.bordered)
-                        .controlSize(.small)
-                }
+            VStack(spacing: 12) {
                 PagerNumberPad(number: $number, busy: model.busy) {
                     Task {
                         if await model.create(number: number.trimmingCharacters(in: .whitespaces).uppercased()) { number = "" }
@@ -25,14 +19,18 @@ struct PagerBoardView: View {
                 }
                 errorLine
                 if model.ticketsLoaded {
-                    ForEach(["waiting", "ready"], id: \.self) { state in
-                        PagerTicketList(model: model, state: state)
-                    }
+                    PagerTabs(
+                        selection: $tab,
+                        waiting: model.tickets.filter { $0.state == "waiting" }.count,
+                        ready: model.tickets.filter { $0.state == "ready" }.count
+                    )
+                    PagerTicketList(model: model, state: tab)
                 } else if model.listError == nil {
                     ProgressView()
                 }
             }
-            .padding(16)
+            .padding(.horizontal, 16)
+            .padding(.bottom, 16)
             .frame(maxWidth: 560)
             .frame(maxWidth: .infinity)
         }
@@ -46,7 +44,7 @@ struct PagerBoardView: View {
             }
         }
         .fullScreenCover(item: $model.shown) { ticket in
-            PagerQRView(ticket: ticket)
+            PagerQRView(ticket: ticket, place: "\(businessName) · \(model.branch?.name ?? "")")
         }
     }
 

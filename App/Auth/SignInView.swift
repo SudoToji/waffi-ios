@@ -16,79 +16,135 @@ struct SignInView: View {
 
     var body: some View {
         ScrollView {
-            VStack(spacing: 20) {
-                VStack(spacing: 6) {
-                    Text("Waffi").font(.largeTitle.bold())
-                    Text("Sign in with your Waffi account.").foregroundStyle(.secondary)
-                }
-                .padding(.top, 40)
-                .multilineTextAlignment(.center)
-
-                VStack(spacing: 12) {
-                    TextField("Email", text: $email)
-                        .textContentType(.username)
-                        .keyboardType(.emailAddress)
-                        .textInputAutocapitalization(.never)
-                        .autocorrectionDisabled()
-                        .textFieldStyle(.roundedBorder)
-                    HStack {
-                        Group {
-                            if showPassword {
-                                TextField("Password", text: $password)
-                            } else {
-                                SecureField("Password", text: $password)
-                            }
-                        }
-                        .textContentType(.password)
-                        .textInputAutocapitalization(.never)
-                        .autocorrectionDisabled()
-                        .textFieldStyle(.roundedBorder)
-                        .onSubmit { Task { await submit() } }
-                        Button(passwordToggle, systemImage: showPassword ? "eye.slash" : "eye") {
-                            showPassword.toggle()
-                        }
-                        .labelStyle(.iconOnly)
-                    }
-                    if ServerOrigin.canChange {
-                        TextField("Server", text: $server, prompt: Text(verbatim: ServerOrigin.production.absoluteString))
-                            .keyboardType(.URL)
-                            .textInputAutocapitalization(.never)
-                            .autocorrectionDisabled()
-                            .textFieldStyle(.roundedBorder)
-                            .environment(\.layoutDirection, .leftToRight)
-                        Text("For testing only. Leave empty for the real server.")
-                            .font(.footnote)
-                            .foregroundStyle(.secondary)
-                            .frame(maxWidth: .infinity, alignment: .leading)
-                    }
-                }
-
-                if let text = message ?? session.notice {
-                    Text(text)
-                        .foregroundStyle(.red)
-                        .multilineTextAlignment(.center)
-                }
-
-                Button {
-                    Task { await submit() }
-                } label: {
-                    if working { ProgressView() } else { Text("Sign in").frame(maxWidth: .infinity) }
-                }
-                .buttonStyle(.borderedProminent)
-                .controlSize(.large)
-                .disabled(!canSubmit)
-
-                Link("Forgot password?", destination: ServerOrigin.current.appending(path: "\(ServerOrigin.language)/forgot-password"))
-                Button("About") { showAbout = true }
-                    .font(.footnote)
+            VStack(spacing: 0) {
+                header
+                form.padding(.top, 36)
             }
-            .padding(24)
+            .padding(.horizontal, 24)
+            .padding(.top, 56)
+            .padding(.bottom, 24)
             .frame(maxWidth: 480)
             .frame(maxWidth: .infinity)
         }
         .scrollDismissesKeyboard(.interactively)
+        .scrollBounceBehavior(.basedOnSize)
+        .background(Theme.background.ignoresSafeArea())
+        .safeAreaInset(edge: .bottom) { footer }
         .sheet(isPresented: $showAbout) {
             NavigationStack { AboutView() }
+        }
+    }
+
+    private var header: some View {
+        VStack(spacing: 14) {
+            Text(verbatim: "W")
+                .font(.system(size: 40, weight: .heavy))
+                .foregroundStyle(Theme.onAccent)
+                .frame(width: 72, height: 72)
+                .background(Theme.accent, in: RoundedRectangle(cornerRadius: 20))
+                .accessibilityHidden(true)
+            Text("Waffi for staff")
+                .font(.title.weight(.heavy))
+                .foregroundStyle(Theme.text)
+                .accessibilityAddTraits(.isHeader)
+            Text("Sign in with your Waffi dashboard account")
+                .font(.subheadline)
+                .foregroundStyle(Theme.secondaryText)
+        }
+        .multilineTextAlignment(.center)
+    }
+
+    private var form: some View {
+        VStack(spacing: 14) {
+            labeled("Email") {
+                TextField("Email", text: $email, prompt: Text(verbatim: "name@example.com"))
+                    .textContentType(.username)
+                    .keyboardType(.emailAddress)
+                    .textInputAutocapitalization(.never)
+                    .autocorrectionDisabled()
+                    .waffiField()
+            }
+            labeled("Password") {
+                Group {
+                    if showPassword {
+                        TextField("Password", text: $password, prompt: Text(verbatim: ""))
+                    } else {
+                        SecureField("Password", text: $password, prompt: Text(verbatim: ""))
+                    }
+                }
+                .textContentType(.password)
+                .textInputAutocapitalization(.never)
+                .autocorrectionDisabled()
+                .onSubmit { Task { await submit() } }
+                .padding(.trailing, 34)
+                .waffiField()
+                .overlay(alignment: .trailing) {
+                    Button(passwordToggle, systemImage: showPassword ? "eye.slash" : "eye") {
+                        showPassword.toggle()
+                    }
+                    .labelStyle(.iconOnly)
+                    .foregroundStyle(Theme.secondaryText)
+                    .frame(width: 44, height: 44)
+                    .padding(.trailing, 4)
+                }
+            }
+
+            Link("Forgot password?", destination: ServerOrigin.current.appending(path: "\(ServerOrigin.language)/forgot-password"))
+                .font(.subheadline.weight(.semibold))
+                .frame(minHeight: 44)
+                .frame(maxWidth: .infinity, alignment: .trailing)
+
+            if let text = message ?? session.notice {
+                Text(text)
+                    .foregroundStyle(.red)
+                    .multilineTextAlignment(.center)
+            }
+
+            Button {
+                Task { await submit() }
+            } label: {
+                if working { ProgressView().tint(Theme.onAccent) } else { Text("Sign in") }
+            }
+            .buttonStyle(.waffiPrimary)
+            .disabled(!canSubmit)
+
+            if ServerOrigin.canChange {
+                labeled("Server") {
+                    TextField("Server", text: $server, prompt: Text(verbatim: ServerOrigin.production.absoluteString))
+                        .keyboardType(.URL)
+                        .textInputAutocapitalization(.never)
+                        .autocorrectionDisabled()
+                        .environment(\.layoutDirection, .leftToRight)
+                        .waffiField()
+                }
+                Text("For testing only. Leave empty for the real server.")
+                    .font(.footnote)
+                    .foregroundStyle(Theme.secondaryText)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+            }
+        }
+    }
+
+    private var footer: some View {
+        VStack(spacing: 4) {
+            Text("Only for Business teams. Customers just scan the QR.")
+                .font(.caption)
+                .foregroundStyle(Theme.secondaryText)
+                .multilineTextAlignment(.center)
+            Button("About") { showAbout = true }
+                .font(.footnote)
+                .frame(minHeight: 44)
+        }
+        .padding(.horizontal, 24)
+    }
+
+    private func labeled<Field: View>(_ title: LocalizedStringKey, @ViewBuilder field: () -> Field) -> some View {
+        VStack(alignment: .leading, spacing: 6) {
+            Text(title)
+                .font(.footnote.weight(.semibold))
+                .foregroundStyle(Theme.text)
+                .accessibilityHidden(true)
+            field()
         }
     }
 

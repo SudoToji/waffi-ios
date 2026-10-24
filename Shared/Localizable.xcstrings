@@ -33,22 +33,6 @@
         }
       }
     },
-    "Ask the customer to scan this code with their phone camera to follow their order.": {
-      "localizations": {
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "اطلب من العميل مسح هذا الرمز بكاميرا هاتفه ليتابع طلبه."
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Ask the customer to scan this code with their phone camera to follow their order."
-          }
-        }
-      }
-    },
     "At least 8 characters, with an uppercase letter, a lowercase letter and a number.": {
       "localizations": {
         "ar": {
@@ -61,22 +45,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "At least 8 characters, with an uppercase letter, a lowercase letter and a number."
-          }
-        }
-      }
-    },
-    "Back to the pad": {
-      "localizations": {
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "العودة إلى لوحة الأرقام"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Back to the pad"
           }
         }
       }
@@ -226,6 +194,22 @@
         }
       }
     },
+    "Done, next order": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تم، الطلب التالي"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Done, next order"
+          }
+        }
+      }
+    },
     "Email": {
       "localizations": {
         "ar": {
@@ -254,6 +238,22 @@
           "stringUnit": {
             "state": "translated",
             "value": "Enter an address that starts with https://"
+          }
+        }
+      }
+    },
+    "Following on their phone": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يتابع من هاتفه"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Following on their phone"
           }
         }
       }
@@ -371,22 +371,6 @@
         }
       }
     },
-    "New ticket": {
-      "localizations": {
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "تذكرة جديدة"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "New ticket"
-          }
-        }
-      }
-    },
     "No Branch is available. Ask the Owner to assign you to one.": {
       "localizations": {
         "ar": {
@@ -463,6 +447,38 @@
           "stringUnit": {
             "state": "translated",
             "value": "Number pad"
+          }
+        }
+      }
+    },
+    "Only for Business teams. Customers just scan the QR.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لفرق الأنشطة التجارية فقط. العملاء يمسحون الرمز فقط."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Only for Business teams. Customers just scan the QR."
+          }
+        }
+      }
+    },
+    "Order": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الطلب"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Order"
           }
         }
       }
@@ -629,34 +645,18 @@
         }
       }
     },
-    "Ready %@": {
+    "Ready · %lld": {
       "localizations": {
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "جاهز منذ %@"
+            "value": "جاهز · %lld"
           }
         },
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Ready %@"
-          }
-        }
-      }
-    },
-    "Ready orders": {
-      "localizations": {
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "الطلبات الجاهزة"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Ready orders"
+            "value": "Ready · %lld"
           }
         }
       }
@@ -743,6 +743,22 @@
         }
       }
     },
+    "Scan with your phone camera": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "امسح الكود بكاميرا هاتفك"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scan with your phone camera"
+          }
+        }
+      }
+    },
     "Server": {
       "localizations": {
         "ar": {
@@ -755,22 +771,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "Server"
-          }
-        }
-      }
-    },
-    "Serving at %@": {
-      "localizations": {
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "تخدم في %@"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Serving at %@"
           }
         }
       }
@@ -839,18 +839,18 @@
         }
       }
     },
-    "Sign in with your Waffi account.": {
+    "Sign in with your Waffi dashboard account": {
       "localizations": {
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "سجّل الدخول بحساب وافي."
+            "value": "سجّل الدخول بحساب لوحة تحكم وافي"
           }
         },
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Sign in with your Waffi account."
+            "value": "Sign in with your Waffi dashboard account"
           }
         }
       }
@@ -937,38 +937,6 @@
         }
       }
     },
-    "Type the order number, show the QR to your customer, and tap Ready when the order is done.": {
-      "localizations": {
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "اكتب رقم الطلب، واعرض رمز QR على العميل، ثم اضغط «جاهز» عندما يكون الطلب جاهزًا."
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Type the order number, show the QR to your customer, and tap Ready when the order is done."
-          }
-        }
-      }
-    },
-    "Up to 8 letters or numbers": {
-      "localizations": {
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "حتى 8 أحرف أو أرقام"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Up to 8 letters or numbers"
-          }
-        }
-      }
-    },
     "Version": {
       "localizations": {
         "ar": {
@@ -1001,34 +969,50 @@
         }
       }
     },
-    "Waiting %@": {
+    "Waffi for staff": {
       "localizations": {
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "في الانتظار منذ %@"
+            "value": "وافي للموظفين"
           }
         },
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Waiting %@"
+            "value": "Waffi for staff"
           }
         }
       }
     },
-    "Waiting orders": {
+    "Waiting · %lld": {
       "localizations": {
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "الطلبات قيد الانتظار"
+            "value": "في الانتظار · %lld"
           }
         },
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Waiting orders"
+            "value": "Waiting · %lld"
+          }
+        }
+      }
+    },
+    "We'll alert you when your order is ready": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "سننبّهك عندما يصبح طلبك جاهزًا"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "We'll alert you when your order is ready"
           }
         }
       }
@@ -1456,22 +1440,6 @@
         }
       },
       "extractionState": "manual"
-    },
-    "under 1 min": {
-      "localizations": {
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "أقل من دقيقة"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "under 1 min"
-          }
-        }
-      }
     }
   },
   "version": "1.0"

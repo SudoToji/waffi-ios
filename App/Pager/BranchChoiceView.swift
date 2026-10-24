@@ -7,17 +7,17 @@ struct BranchChoiceView: View {
 
     var body: some View {
         ScrollView {
-            VStack(spacing: 16) {
-                Text("Where are you working today?").font(.title2.bold())
-                Text("Choose the Branch you serve at. You can change it any time.").foregroundStyle(.secondary)
+            VStack(spacing: 12) {
+                Text("Where are you working today?")
+                    .font(.title2.weight(.heavy))
+                    .foregroundStyle(Theme.text)
+                Text("Choose the Branch you serve at. You can change it any time.").foregroundStyle(Theme.secondaryText)
                 if gone {
-                    Text("The Branch you were serving at is no longer available. Choose another.").foregroundStyle(.orange)
+                    Text("The Branch you were serving at is no longer available. Choose another.").foregroundStyle(Theme.warning)
                 }
                 ForEach(model.branches) { branch in
                     Button(branch.name) { model.choose(branch) }
-                        .buttonStyle(.bordered)
-                        .controlSize(.large)
-                        .frame(maxWidth: .infinity)
+                        .buttonStyle(.waffiTinted)
                 }
             }
             .multilineTextAlignment(.center)
