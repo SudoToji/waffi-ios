@@ -11,7 +11,7 @@ enum AppTab: String, CaseIterable, Identifiable {
         case .overview: "Overview"
         case .earn: "Earn & redeem"
         case .customers: "Customers"
-        case .campaigns: "Campaigns"
+        case .campaigns: "Messages"
         case .pager: "Pager"
         }
     }
