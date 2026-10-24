@@ -9,6 +9,10 @@ enum PagerLayout: String, Codable, Hashable {
     case track
     /// D: Arabic first, right to left.
     case arabic
+    /// E: solid brand card, big status line, three bars.
+    case segments
+    /// F: white card, two overlapping logos and a three-node route.
+    case route
 }
 
 enum PagerWording: String, Codable, Hashable {

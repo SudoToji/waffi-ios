@@ -17,6 +17,8 @@ private let arabic = attributes(.arabic, .order, "#2F766B", arabic: true)
 private let coffee = attributes(.ring, .coffee, "#6F4E37", number: "67")
 private let car = attributes(.track, .car, "#1D4ED8", number: "A12")
 private let barber = attributes(.stub, .turn, "#C9A227", number: "14")
+private let segments = attributes(.segments, .order, "#7A4A2A")
+private let route = attributes(.route, .coffee, "#2E5A43")
 private let restaurant = attributes(.arabic, .order, "#B4532A", number: "58", arabic: true)
 
 /// The card on the lock screen: its own tint when solid, a wallpaper behind the system material when transparent.
@@ -42,6 +44,15 @@ private func lockScreen(_ attributes: PagerActivityAttributes, _ state: PagerSta
 #Preview("C track, ready") { lockScreen(track, .ready) }
 #Preview("D Arabic, waiting") { lockScreen(arabic, .waiting) }
 #Preview("D Arabic, ready") { lockScreen(arabic, .ready) }
+
+#Preview("E segments, waiting") { lockScreen(segments, .waiting) }
+#Preview("E segments, ready") { lockScreen(segments, .ready) }
+#Preview("F route, waiting") { lockScreen(route, .waiting) }
+#Preview("F route, ready") { lockScreen(route, .ready) }
+#Preview("F route, Arabic phone") {
+    lockScreen(attributes(.route, .coffee, "#2E5A43", arabic: true), .ready)
+        .environment(\.locale, Locale(identifier: "ar"))
+}
 
 #Preview("Coffee, waiting") { lockScreen(coffee, .waiting) }
 #Preview("Coffee, ready") { lockScreen(coffee, .ready) }

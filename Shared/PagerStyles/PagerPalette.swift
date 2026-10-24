@@ -40,6 +40,9 @@ struct PagerPalette {
         case .ring, .arabic: return (true, "#F3F3F0")
         case .stub: return (false, "#1C1C1E")
         case .track: return (false, style.wording == .car ? "#0F2147" : "#2B2724")
+        // The card is the brand colour itself: dark text on a light brand, white on a dark one.
+        case .segments: return (PagerColors.contrast("#FFFFFF", style.color) < 4.5, style.color)
+        case .route: return (true, "#FFFFFF")
         }
     }
 

@@ -3,11 +3,13 @@ import SwiftUI
 /// The Waffi logo mark: the "w" tick and its ember dot on a forest-green rounded tile. Drawn in the 120 x 120 box of the website's logo.
 struct WaffiMark: View {
     var size: CGFloat = 32
+    /// A circle instead of a rounded square.
+    var round = false
 
     var body: some View {
         let scale = size / 120
         ZStack(alignment: .topLeading) {
-            RoundedRectangle(cornerRadius: size * 0.24, style: .continuous)
+            RoundedRectangle(cornerRadius: round ? size / 2 : size * 0.24, style: .continuous)
                 .fill(Color(red: 47 / 255, green: 86 / 255, blue: 64 / 255))
             Tick()
                 .stroke(

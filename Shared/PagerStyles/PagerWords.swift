@@ -7,6 +7,15 @@ struct PagerWords {
     var detailAR: String?
 }
 
+extension Locale {
+    /// Layouts E and F follow the phone language; A to D are bilingual by design.
+    var isArabic: Bool { language.languageCode?.identifier == "ar" }
+}
+
+extension PagerWords {
+    func text(arabic: Bool) -> String { arabic ? ar : en }
+}
+
 extension PagerWording {
     func words(for state: PagerState) -> PagerWords {
         switch (self, state) {

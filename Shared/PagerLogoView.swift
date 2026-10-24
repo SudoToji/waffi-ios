@@ -8,6 +8,8 @@ struct PagerLogoView: View {
     var tile: Color?
     /// The Waffi mark's colour, shown when there is no logo.
     var glyph: Color = .white
+    /// A circle instead of a rounded square.
+    var round = false
 
     var body: some View {
         Group {
@@ -23,7 +25,7 @@ struct PagerLogoView: View {
             }
         }
         .frame(width: size, height: size)
-        .clipShape(RoundedRectangle(cornerRadius: size * 0.22))
+        .clipShape(RoundedRectangle(cornerRadius: round ? size / 2 : size * 0.22))
         .accessibilityHidden(true)
     }
 }
