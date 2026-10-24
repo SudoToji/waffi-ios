@@ -5,6 +5,7 @@ struct AccountView: View {
     let session: SessionModel
     let account: AppAccount
     @Environment(\.dismiss) private var dismiss
+    @AppStorage(Appearance.storageKey) private var appearance = Appearance.system
 
     private var version: String {
         let info = Bundle.main.infoDictionary
@@ -16,6 +17,14 @@ struct AccountView: View {
             Section {
                 LabeledContent("Email") { Text(verbatim: account.user.email) }
                 LabeledContent("Business") { Text(verbatim: account.business.name) }
+            }
+            Section {
+                Picker("Appearance", selection: $appearance) {
+                    ForEach(Appearance.allCases) { Text($0.label).tag($0) }
+                }
+                .pickerStyle(.segmented)
+            } header: {
+                Text("Appearance")
             }
             Section {
                 Button("Sign out", role: .destructive) {

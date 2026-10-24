@@ -6,6 +6,7 @@ import SwiftUI
 struct RootView: View {
     @State private var session = SessionModel()
     @State private var ticket: PagerTicketModel?
+    @AppStorage(Appearance.storageKey) private var appearance = Appearance.system
 
     var body: some View {
         Group {
@@ -39,6 +40,8 @@ struct RootView: View {
             }
         }
         .tint(Theme.accent)
+        // The ticket screen is always dark; everything else follows the Appearance chosen in Account.
+        .preferredColorScheme(ticket != nil ? .dark : appearance.scheme)
         .task { await session.start() }
         // iOS delivers a universal link as a browsing activity; a link opened another way arrives as a URL. Both open the ticket.
         .onContinueUserActivity(NSUserActivityTypeBrowsingWeb) { activity in

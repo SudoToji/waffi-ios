@@ -385,6 +385,23 @@
         }
       }
     },
+    "Appearance": {
+      "comment": "Account: light or dark mode",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "المظهر"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Appearance"
+          }
+        }
+      }
+    },
     "At least 8 characters, with an uppercase letter, a lowercase letter and a number.": {
       "localizations": {
         "ar": {
@@ -798,6 +815,23 @@
           "stringUnit": {
             "state": "translated",
             "value": "Customers"
+          }
+        }
+      }
+    },
+    "Dark": {
+      "comment": "Account: light or dark mode",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "داكن"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dark"
           }
         }
       }
@@ -1391,6 +1425,23 @@
           "stringUnit": {
             "state": "translated",
             "value": "Keep your sound on. We will alert you when your order is ready."
+          }
+        }
+      }
+    },
+    "Light": {
+      "comment": "Account: light or dark mode",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "فاتح"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Light"
           }
         }
       }
@@ -2777,6 +2828,23 @@
           "stringUnit": {
             "state": "translated",
             "value": "Support"
+          }
+        }
+      }
+    },
+    "System": {
+      "comment": "Account: light or dark mode",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تلقائي"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "System"
           }
         }
       }
