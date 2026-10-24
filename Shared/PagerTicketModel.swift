@@ -2,9 +2,9 @@ import ActivityKit
 import Observation
 import SwiftUI
 
-/// One ticket the App Clip follows: reads it, keeps the Live Activity in step with it and registers the activity's push tokens.
+/// One ticket the App Clip or the full app follows: reads it, keeps the Live Activity in step with it and registers the activity's push tokens.
 @Observable @MainActor
-final class PagerTicketModel {
+final class PagerTicketModel: Identifiable {
     enum Phase {
         case loading
         case open(PagerTicket)
@@ -12,10 +12,11 @@ final class PagerTicketModel {
     }
 
     let client: PagerClient
+    let host: PagerHost
     private(set) var phase = Phase.loading
     /// The last read failed. Reading goes on every 5 seconds, so it clears itself.
     private(set) var connectionLost = false
-    /// Live Activities are off for the Clip (or could not start): the on-screen status is all there is.
+    /// Live Activities are off for this app (or could not start): the on-screen status is all there is.
     private(set) var liveActivityOff = false
 
     @ObservationIgnored private var activity: Activity<PagerActivityAttributes>?
@@ -23,9 +24,12 @@ final class PagerTicketModel {
     @ObservationIgnored private var pendingToken: Data?
     @ObservationIgnored private var logoFetched = false
 
-    init(client: PagerClient) {
+    init(client: PagerClient, host: PagerHost) {
         self.client = client
+        self.host = host
     }
+
+    var id: String { client.token }
 
     var isEnded: Bool {
         if case .ended = phase { return true }
@@ -80,7 +84,7 @@ final class PagerTicketModel {
             }
         }
         liveActivityOff = false
-        // A push may have been missed while the Clip was away; the read is the truth.
+        // A push may have been missed while the app was away; the read is the truth.
         if let activity, activity.content.state != state {
             await activity.update(ActivityContent(state: state, staleDate: nil))
         }
@@ -100,7 +104,7 @@ final class PagerTicketModel {
     private func registerPendingToken() async {
         guard let token = pendingToken else { return }
         do {
-            try await client.registerLiveActivity(token: token, app: "clip")
+            try await client.registerLiveActivity(token: token, host: host)
         } catch PagerClientError.status(let code) where (400..<500).contains(code) && code != 429 {
             // Refused for good (the ticket ended, a bad request): do not send it again.
         } catch {

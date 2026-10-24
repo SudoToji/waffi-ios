@@ -7,11 +7,11 @@ The iPhone side of Waffi's Pager: the **Waffi** app (staff), the **App Clip** a 
 | Folder | What it is |
 |---|---|
 | `project.yml` | [XcodeGen](https://github.com/yonaskolb/XcodeGen) spec. The Xcode project, Info.plists and entitlements are generated from it by CI and are not committed. |
-| `App/` | `Waffi` app target (`com.waffieg.app`). |
+| `App/` | `Waffi` app target (`com.waffieg.app`): staff sign-in (bearer tokens in the Keychain, `Auth/`), the staff Pager (`Pager/`), About, and the ticket screen for a `/p/<token>` link. A Debug or TestFlight build shows a Server field on the sign-in screen (https only); App Store builds always use https://waffieg.com. |
 | `AppLiveActivity/` | Widget extension inside the app (`com.waffieg.app.LiveActivity`), Live Activity only. |
 | `Clip/` | `WaffiClip` App Clip target (`com.waffieg.app.Clip`). |
 | `ClipLiveActivity/` | Widget extension inside the Clip (`com.waffieg.app.Clip.LiveActivity`), Live Activity only. |
-| `Shared/` | Swift compiled into all four targets: the Live Activity attributes, its UI, the logo helper (`PagerLogo`: the App Clip writes the Business logo to the App Group at `PagerLogo.fileURL(forBusiness:)`) and `Localizable.xcstrings` (en, ar). |
+| `Shared/` | Swift compiled into all four targets: the ticket model and screen (`PagerTicketModel`, `PagerTicketView`; the app and the Clip each pass their own `PagerHost`), the Live Activity attributes, its UI, the logo helper (`PagerLogo`: the App Clip writes the Business logo to the App Group at `PagerLogo.fileURL(forBusiness:)`) and `Localizable.xcstrings` (en, ar). |
 | `Resources/` | Asset catalog (app icon) for the app and the Clip. `scripts/make_icon.py` regenerates the placeholder icon. |
 | `.github/workflows/` | `build.yml` (every push and PR: unsigned simulator build) and `testflight.yml` (signed build uploaded to TestFlight). |
 

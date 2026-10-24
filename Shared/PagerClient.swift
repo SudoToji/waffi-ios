@@ -27,8 +27,13 @@ enum PagerClientError: Error {
     case status(Int)
 }
 
+/// Which app follows a ticket: the API wants to know whether to address a push to the full app or to its App Clip.
+enum PagerHost: String {
+    case app, clip
+}
+
 /// The Pager's public API for one ticket. The token is the only credential and travels in `X-Pager-Token`, never in a URL.
-/// Shared with the full app (#325).
+/// Shared by the App Clip and the full app.
 struct PagerClient {
     /// `https://<host>[:port]` of the invocation URL: the API is the site that printed the QR (production, or a tunnel while testing).
     let origin: URL
@@ -66,12 +71,12 @@ struct PagerClient {
         return try? await send(request)
     }
 
-    /// Registers a Live Activity push token on the ticket. `app` is `clip` for the App Clip and `app` for the full app.
-    func registerLiveActivity(token pushToken: Data, app: String) async throws {
+    /// Registers a Live Activity push token on the ticket.
+    func registerLiveActivity(token pushToken: Data, host: PagerHost) async throws {
         struct Target: Encodable { let token: String; let app: String }
         struct Body: Encodable { let kind = "live_activity"; let target: String; let locale: String }
         // The API wants `target` as JSON text inside the JSON body.
-        let target = try JSONEncoder().encode(Target(token: pushToken.map { String(format: "%02x", $0) }.joined(), app: app))
+        let target = try JSONEncoder().encode(Target(token: pushToken.map { String(format: "%02x", $0) }.joined(), app: host.rawValue))
         var request = request(path: "api/pager/public/devices")
         request.httpMethod = "POST"
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")

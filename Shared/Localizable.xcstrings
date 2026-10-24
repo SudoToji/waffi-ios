@@ -1,121 +1,162 @@
 {
   "sourceLanguage": "en",
   "strings": {
-    "Order complete": {
-      "comment": "Live Activity status line after the order is collected or the ticket ends",
+    "About": {
       "localizations": {
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "اكتمل الطلب"
+            "value": "حول التطبيق"
           }
         },
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Order complete"
+            "value": "About"
           }
         }
       }
     },
-    "Preparing your order": {
-      "comment": "Live Activity status line while the order is being prepared",
+    "Account": {
       "localizations": {
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "جارٍ تحضير طلبك"
+            "value": "الحساب"
           }
         },
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Preparing your order"
+            "value": "Account"
           }
         }
       }
     },
-    "Ready, collect your order": {
-      "comment": "Live Activity status line when the order is ready",
+    "Ask the customer to scan this code with their phone camera to follow their order.": {
       "localizations": {
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "جاهز، تفضّل باستلام طلبك"
+            "value": "اطلب من العميل مسح هذا الرمز بكاميرا هاتفه ليتابع طلبه."
           }
         },
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Ready, collect your order"
+            "value": "Ask the customer to scan this code with their phone camera to follow their order."
           }
         }
       }
     },
-    "This ticket has ended": {
-      "comment": "App Clip: the ticket was collected, ended or is unknown",
+    "At least 8 characters, with an uppercase letter, a lowercase letter and a number.": {
       "localizations": {
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "انتهت هذه التذكرة"
+            "value": "8 أحرف على الأقل، مع حرف كبير (A-Z) وحرف صغير (a-z) ورقم."
           }
         },
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "This ticket has ended"
+            "value": "At least 8 characters, with an uppercase letter, a lowercase letter and a number."
           }
         }
       }
     },
-    "Your order number": {
-      "comment": "App Clip: label above the order number",
+    "Back to the pad": {
       "localizations": {
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "رقم طلبك"
+            "value": "العودة إلى لوحة الأرقام"
           }
         },
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Your order number"
+            "value": "Back to the pad"
           }
         }
       }
     },
-    "Turn off silent mode so you hear it when your order is ready.": {
-      "comment": "App Clip: hint, the alert sound is muted by the silent switch",
+    "Change Branch": {
       "localizations": {
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "أوقف وضع الصامت لتسمع التنبيه عندما يصبح طلبك جاهزًا."
+            "value": "تغيير الفرع"
           }
         },
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Turn off silent mode so you hear it when your order is ready."
+            "value": "Change Branch"
           }
         }
       }
     },
-    "Live Activities are off for Waffi, so your order will not show on the lock screen. Keep this screen open, or turn them on in Settings.": {
-      "comment": "App Clip: note when Live Activities are switched off",
+    "Choose the Branch you serve at. You can change it any time.": {
       "localizations": {
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "الأنشطة المباشرة متوقفة لـ Waffi، لذا لن يظهر طلبك على شاشة القفل. أبقِ هذه الشاشة مفتوحة أو فعّلها من الإعدادات."
+            "value": "اختر الفرع الذي تخدم فيه. يمكنك تغييره في أي وقت."
           }
         },
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Live Activities are off for Waffi, so your order will not show on the lock screen. Keep this screen open, or turn them on in Settings."
+            "value": "Choose the Branch you serve at. You can change it any time."
+          }
+        }
+      }
+    },
+    "Choose your own password": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اختر كلمة مرور خاصة بك"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Choose your own password"
+          }
+        }
+      }
+    },
+    "Clear": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مسح"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Clear"
+          }
+        }
+      }
+    },
+    "Close": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إغلاق"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Close"
           }
         }
       }
@@ -137,6 +178,554 @@
         }
       }
     },
+    "Current password": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "كلمة المرور الحالية"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Current password"
+          }
+        }
+      }
+    },
+    "Delete the last character": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حذف آخر حرف"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Delete the last character"
+          }
+        }
+      }
+    },
+    "Done": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تم"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Done"
+          }
+        }
+      }
+    },
+    "Email": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "البريد الإلكتروني"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Email"
+          }
+        }
+      }
+    },
+    "Enter an address that starts with https://": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أدخل عنوانًا يبدأ بـ https://"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enter an address that starts with https://"
+          }
+        }
+      }
+    },
+    "For testing only. Leave empty for the real server.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "للاختبار فقط. اتركه فارغًا لاستخدام الخادم الحقيقي."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "For testing only. Leave empty for the real server."
+          }
+        }
+      }
+    },
+    "Forgot password?": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "نسيت كلمة المرور؟"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Forgot password?"
+          }
+        }
+      }
+    },
+    "Hide password": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إخفاء كلمة المرور"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hide password"
+          }
+        }
+      }
+    },
+    "Live Activities are off for Waffi, so your order will not show on the lock screen. Keep this screen open, or turn them on in Settings.": {
+      "comment": "App Clip: note when Live Activities are switched off",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الأنشطة المباشرة متوقفة لـ Waffi، لذا لن يظهر طلبك على شاشة القفل. أبقِ هذه الشاشة مفتوحة أو فعّلها من الإعدادات."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Live Activities are off for Waffi, so your order will not show on the lock screen. Keep this screen open, or turn them on in Settings."
+          }
+        }
+      }
+    },
+    "Mark order %@ done": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إنهاء الطلب %@"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mark order %@ done"
+          }
+        }
+      }
+    },
+    "Mark order %@ ready": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تحديد الطلب %@ كجاهز"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mark order %@ ready"
+          }
+        }
+      }
+    },
+    "New password": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "كلمة المرور الجديدة"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "New password"
+          }
+        }
+      }
+    },
+    "New ticket": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تذكرة جديدة"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "New ticket"
+          }
+        }
+      }
+    },
+    "No Branch is available. Ask the Owner to assign you to one.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لا يوجد فرع متاح. اطلب من المالك أن يعيّنك في فرع."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No Branch is available. Ask the Owner to assign you to one."
+          }
+        }
+      }
+    },
+    "No orders ready.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لا توجد طلبات جاهزة."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No orders ready."
+          }
+        }
+      }
+    },
+    "No orders waiting.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لا توجد طلبات قيد الانتظار."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No orders waiting."
+          }
+        }
+      }
+    },
+    "Not scanned yet": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لم يُمسح بعد"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Not scanned yet"
+          }
+        }
+      }
+    },
+    "Number pad": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لوحة الأرقام"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Number pad"
+          }
+        }
+      }
+    },
+    "Order %@": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الطلب %@"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Order %@"
+          }
+        }
+      }
+    },
+    "Order %@ is already waiting. Use a different number or finish that ticket first.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الطلب %@ قيد الانتظار بالفعل. استخدم رقمًا آخر أو أنهِ تلك التذكرة أولًا."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Order %@ is already waiting. Use a different number or finish that ticket first."
+          }
+        }
+      }
+    },
+    "Order complete": {
+      "comment": "Live Activity status line after the order is collected or the ticket ends",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اكتمل الطلب"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Order complete"
+          }
+        }
+      }
+    },
+    "Order number": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "رقم الطلب"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Order number"
+          }
+        }
+      }
+    },
+    "Pager": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "النداء"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pager"
+          }
+        }
+      }
+    },
+    "Password": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "كلمة المرور"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Password"
+          }
+        }
+      }
+    },
+    "Preparing your order": {
+      "comment": "Live Activity status line while the order is being prepared",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "جارٍ تحضير طلبك"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Preparing your order"
+          }
+        }
+      }
+    },
+    "Privacy policy": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "سياسة الخصوصية"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Privacy policy"
+          }
+        }
+      }
+    },
+    "QR code for order %@": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "رمز QR للطلب %@"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "QR code for order %@"
+          }
+        }
+      }
+    },
+    "Ready": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "جاهز"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ready"
+          }
+        }
+      }
+    },
+    "Ready %@": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "جاهز منذ %@"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ready %@"
+          }
+        }
+      }
+    },
+    "Ready orders": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الطلبات الجاهزة"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ready orders"
+          }
+        }
+      }
+    },
+    "Ready, collect your order": {
+      "comment": "Live Activity status line when the order is ready",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "جاهز، تفضّل باستلام طلبك"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ready, collect your order"
+          }
+        }
+      }
+    },
+    "Replace your temporary password before continuing.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "غيّر كلمة المرور المؤقتة قبل المتابعة."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Replace your temporary password before continuing."
+          }
+        }
+      }
+    },
+    "Retry": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إعادة المحاولة"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Retry"
+          }
+        }
+      }
+    },
+    "Save password": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حفظ كلمة المرور"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Save password"
+          }
+        }
+      }
+    },
     "Scan the code on your ticket to follow your order.": {
       "comment": "App Clip: opened without a valid ticket link",
       "localizations": {
@@ -150,6 +739,736 @@
           "stringUnit": {
             "state": "translated",
             "value": "Scan the code on your ticket to follow your order."
+          }
+        }
+      }
+    },
+    "Server": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الخادم"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Server"
+          }
+        }
+      }
+    },
+    "Serving at %@": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تخدم في %@"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Serving at %@"
+          }
+        }
+      }
+    },
+    "Show QR": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "عرض الرمز"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show QR"
+          }
+        }
+      }
+    },
+    "Show password": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إظهار كلمة المرور"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show password"
+          }
+        }
+      }
+    },
+    "Show the QR for order %@": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "عرض رمز الطلب %@"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show the QR for order %@"
+          }
+        }
+      }
+    },
+    "Sign in": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تسجيل الدخول"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sign in"
+          }
+        }
+      }
+    },
+    "Sign in with your Waffi account.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "سجّل الدخول بحساب وافي."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sign in with your Waffi account."
+          }
+        }
+      }
+    },
+    "Sign out": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تسجيل الخروج"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sign out"
+          }
+        }
+      }
+    },
+    "The Branch you were serving at is no longer available. Choose another.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الفرع الذي كنت تخدم فيه لم يعد متاحًا. اختر فرعًا آخر."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The Branch you were serving at is no longer available. Choose another."
+          }
+        }
+      }
+    },
+    "The Pager is not turned on for your Business.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "النداء غير مفعّل لنشاطك التجاري."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The Pager is not turned on for your Business."
+          }
+        }
+      }
+    },
+    "This ticket has ended": {
+      "comment": "App Clip: the ticket was collected, ended or is unknown",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "انتهت هذه التذكرة"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This ticket has ended"
+          }
+        }
+      }
+    },
+    "Turn off silent mode so you hear it when your order is ready.": {
+      "comment": "App Clip: hint, the alert sound is muted by the silent switch",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أوقف وضع الصامت لتسمع التنبيه عندما يصبح طلبك جاهزًا."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Turn off silent mode so you hear it when your order is ready."
+          }
+        }
+      }
+    },
+    "Type the order number, show the QR to your customer, and tap Ready when the order is done.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اكتب رقم الطلب، واعرض رمز QR على العميل، ثم اضغط «جاهز» عندما يكون الطلب جاهزًا."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Type the order number, show the QR to your customer, and tap Ready when the order is done."
+          }
+        }
+      }
+    },
+    "Up to 8 letters or numbers": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حتى 8 أحرف أو أرقام"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Up to 8 letters or numbers"
+          }
+        }
+      }
+    },
+    "Version": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الإصدار"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Version"
+          }
+        }
+      }
+    },
+    "Waffi": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "وافي"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Waffi"
+          }
+        }
+      }
+    },
+    "Waiting %@": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "في الانتظار منذ %@"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Waiting %@"
+          }
+        }
+      }
+    },
+    "Waiting orders": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الطلبات قيد الانتظار"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Waiting orders"
+          }
+        }
+      }
+    },
+    "Where are you working today?": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أين تعمل اليوم؟"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Where are you working today?"
+          }
+        }
+      }
+    },
+    "Your order number": {
+      "comment": "App Clip: label above the order number",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "رقم طلبك"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your order number"
+          }
+        }
+      }
+    },
+    "error.AWAITING_APPROVAL": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حسابك قيد المراجعة. سنتواصل معك قريبًا عبر البريد الإلكتروني أو الهاتف."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your account is waiting for approval. We will contact you soon by email or phone."
+          }
+        }
+      },
+      "extractionState": "manual"
+    },
+    "error.BRANCH_LOCKED": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "هذا الفرع غير متاح حاليًا. تواصل مع المالك."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This Branch is not available right now. Ask the Owner."
+          }
+        }
+      },
+      "extractionState": "manual"
+    },
+    "error.BRANCH_NOT_ASSIGNED": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لست معينًا في هذا الفرع. تواصل مع المالك."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You are not assigned to this Branch. Ask the Owner."
+          }
+        }
+      },
+      "extractionState": "manual"
+    },
+    "error.BRANCH_UNAVAILABLE": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "هذا الفرع غير متاح. اختر فرعًا آخر."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This Branch is not available. Choose another Branch."
+          }
+        }
+      },
+      "extractionState": "manual"
+    },
+    "error.DATABASE_UNAVAILABLE": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "وافي غير متاح مؤقتاً. حاول مرة أخرى بعد قليل."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Waffi is temporarily unavailable. Please try again in a moment."
+          }
+        }
+      },
+      "extractionState": "manual"
+    },
+    "error.EMAIL_NOT_CONFIRMED": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أكّد بريدك الإلكتروني أولاً. افتح الرابط في صندوق الوارد."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Confirm your email first. Check your inbox for the link."
+          }
+        }
+      },
+      "extractionState": "manual"
+    },
+    "error.FORBIDDEN": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حسابك لا يملك صلاحية الوصول إلى هذا."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your account does not have access to this."
+          }
+        }
+      },
+      "extractionState": "manual"
+    },
+    "error.GENERIC": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حدث خطأ. حاول مرة أخرى."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Something went wrong. Please try again."
+          }
+        }
+      },
+      "extractionState": "manual"
+    },
+    "error.INVALID_CREDENTIALS": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "البريد الإلكتروني أو كلمة المرور غير صحيحة."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Email or password is incorrect."
+          }
+        }
+      },
+      "extractionState": "manual"
+    },
+    "error.INVALID_RESPONSE": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تعذر قراءة استجابة الخادم. يرجى المحاولة مرة أخرى."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "We could not read the server response. Please try again."
+          }
+        }
+      },
+      "extractionState": "manual"
+    },
+    "error.NETWORK": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تعذّر الاتصال بوافي. حاول مرة أخرى بعد قليل."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "We couldn't reach Waffi. Please try again in a moment."
+          }
+        }
+      },
+      "extractionState": "manual"
+    },
+    "error.PAGER_NUMBER_TAKEN": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "رقم الطلب هذا مفتوح بالفعل في هذا الفرع. استخدم رقمًا آخر أو أنهِ التذكرة المفتوحة أولًا."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This order number is already open at this Branch. Use a different number or finish the open ticket first."
+          }
+        }
+      },
+      "extractionState": "manual"
+    },
+    "error.PAGER_TICKET_ENDED": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "انتهت تذكرة النداء هذه بالفعل."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This Pager Ticket has already ended."
+          }
+        }
+      },
+      "extractionState": "manual"
+    },
+    "error.PAGER_TICKET_NOT_FOUND": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لم يتم العثور على تذكرة النداء هذه."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This Pager Ticket was not found."
+          }
+        }
+      },
+      "extractionState": "manual"
+    },
+    "error.PASSWORD_CHANGE_REQUIRED": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اختر كلمة مرور جديدة قبل المتابعة."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Choose a new password before continuing."
+          }
+        }
+      },
+      "extractionState": "manual"
+    },
+    "error.PASSWORD_UNCHANGED": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اختار كلمة مرور مختلفة عن الحالية."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Choose a password different from your current password."
+          }
+        }
+      },
+      "extractionState": "manual"
+    },
+    "error.PLAN_REQUIRED": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "النداء غير مفعّل لنشاطك التجاري."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The Pager is not turned on for your Business."
+          }
+        }
+      },
+      "extractionState": "manual"
+    },
+    "error.RATE_LIMIT": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "محاولات كثيرة. انتظر دقيقة وحاول مرة أخرى."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Too many attempts. Please wait a minute and try again."
+          }
+        }
+      },
+      "extractionState": "manual"
+    },
+    "error.SUBSCRIPTION_ENDED": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "انتهى وصول نشاطك التجاري إلى وافي. تواصل مع المالك."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your Business's access to Waffi has ended. Please contact the Owner."
+          }
+        }
+      },
+      "extractionState": "manual"
+    },
+    "error.TEAM_SEAT_LOCKED": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "هذا الحساب مقفل. تواصل مع المالك."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This account is locked. Ask the Owner."
+          }
+        }
+      },
+      "extractionState": "manual"
+    },
+    "error.UNAUTHENTICATED": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "انتهت جلستك. سجّل الدخول مرة أخرى."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your session has ended. Please sign in again."
+          }
+        }
+      },
+      "extractionState": "manual"
+    },
+    "error.VALIDATION": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تحقق من البيانات المدخلة وحاول مرة أخرى."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Check your entries and try again."
+          }
+        }
+      },
+      "extractionState": "manual"
+    },
+    "error.WEAK_PASSWORD": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اختار كلمة مرور أقوى."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Choose a stronger password."
+          }
+        }
+      },
+      "extractionState": "manual"
+    },
+    "under 1 min": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أقل من دقيقة"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "under 1 min"
           }
         }
       }

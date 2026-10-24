@@ -1,6 +1,6 @@
 import SwiftUI
 
-/// The ticket screen: logo, Business, Branch, number and status, read again every 5 seconds while the Clip is in the foreground.
+/// The ticket screen: logo, Business, Branch, number and status, read again every 5 seconds while the app is in the foreground.
 struct PagerTicketView: View {
     let model: PagerTicketModel
     @Environment(\.scenePhase) private var scenePhase
@@ -25,7 +25,7 @@ struct PagerTicketView: View {
         .multilineTextAlignment(.center)
         .padding(24)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        // Restarts when the Clip comes back to the foreground, and stops in the background.
+        // Restarts when the app comes back to the foreground, and stops in the background.
         .task(id: scenePhase) {
             guard scenePhase == .active else { return }
             while !Task.isCancelled {

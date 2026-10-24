@@ -18,7 +18,7 @@ struct WaffiClipApp: App {
             // The QR link `https://<host>/p/<token>`; a scan of the same ticket again keeps what is on screen.
             .onContinueUserActivity(NSUserActivityTypeBrowsingWeb) { activity in
                 guard let url = activity.webpageURL, let client = PagerClient(invocation: url) else { return }
-                if model?.client.token != client.token { model = PagerTicketModel(client: client) }
+                if model?.client.token != client.token { model = PagerTicketModel(client: client, host: .clip) }
             }
         }
     }

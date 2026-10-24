@@ -4,7 +4,7 @@ import SwiftUI
 struct WaffiApp: App {
     var body: some Scene {
         WindowGroup {
-            Text("Waffi")
+            RootView()
         }
     }
 }
