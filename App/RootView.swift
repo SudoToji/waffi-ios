@@ -5,6 +5,9 @@ import SwiftUI
 struct RootView: View {
     @State private var session = SessionModel()
     @State private var ticket: PagerTicketModel?
+    /// Changed when a ticket link arrives: rebuilding the shell closes whatever it presents (the QR screen, a sheet),
+    /// since iOS will not show the ticket over another full-screen presentation.
+    @State private var shellID = UUID()
 
     var body: some View {
         Group {
@@ -23,7 +26,7 @@ struct RootView: View {
             case .mustChangePassword:
                 ChangePasswordView(session: session)
             case .signedIn(let account):
-                AppShell(session: session, account: account)
+                AppShell(session: session, account: account).id(shellID)
             }
         }
         .tint(Theme.accent)
@@ -41,7 +44,14 @@ struct RootView: View {
         // A scan of the same ticket again keeps what is on screen.
         .onContinueUserActivity(NSUserActivityTypeBrowsingWeb) { activity in
             guard let url = activity.webpageURL, let client = PagerClient(invocation: url) else { return }
-            if ticket?.client.token != client.token { ticket = PagerTicketModel(client: client, host: .app) }
+            guard ticket?.client.token != client.token else { return }
+            ticket = nil
+            shellID = UUID()
+            Task { @MainActor in
+                // Let the closed presentations finish dismissing before the ticket is shown.
+                try? await Task.sleep(for: .milliseconds(450))
+                ticket = PagerTicketModel(client: client, host: .app)
+            }
         }
     }
 }
