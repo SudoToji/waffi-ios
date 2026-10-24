@@ -25,4 +25,13 @@ extension PagerState {
         case .ended: "Order complete"
         }
     }
+
+    /// The Live Activity's status line: both languages at once, so it is not localized per phone language.
+    var bilingualMessage: String {
+        switch self {
+        case .waiting: "Preparing · قيد التحضير"
+        case .ready: "Ready, collect your order · طلبك جاهز"
+        case .ended: "Ended · انتهى"
+        }
+    }
 }

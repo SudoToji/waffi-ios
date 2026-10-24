@@ -7,7 +7,7 @@ private let sampleArabic = PagerActivityAttributes(businessName: "قهوة وف�
 
 private func lockScreen(_ attributes: PagerActivityAttributes, _ state: PagerState, language: String) -> some View {
     PagerLockScreenView(attributes: attributes, state: state)
-        .background(state.color.opacity(0.2))
+        .background(PagerLockScreenView.background)
         .environment(\.locale, Locale(identifier: language))
         .environment(\.layoutDirection, language == "ar" ? .rightToLeft : .leftToRight)
 }

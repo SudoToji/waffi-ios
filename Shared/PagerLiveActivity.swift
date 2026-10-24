@@ -7,34 +7,32 @@ struct PagerLiveActivity: Widget {
     var body: some WidgetConfiguration {
         ActivityConfiguration(for: PagerActivityAttributes.self) { context in
             PagerLockScreenView(attributes: context.attributes, state: context.state.state)
-                .activityBackgroundTint(context.state.state.color.opacity(0.2))
+                .activityBackgroundTint(PagerLockScreenView.background)
         } dynamicIsland: { context in
             let state = context.state.state
             return DynamicIsland {
-                DynamicIslandExpandedRegion(.leading) {
-                    PagerLogoView(businessName: context.attributes.businessName, size: 36)
-                }
-                DynamicIslandExpandedRegion(.trailing) {
-                    Text(context.attributes.number)
-                        .font(.system(.title, design: .rounded, weight: .bold))
-                        .monospacedDigit()
-                        .lineLimit(1)
-                        .minimumScaleFactor(0.5)
-                }
                 DynamicIslandExpandedRegion(.center) {
-                    Text(context.attributes.businessName).font(.headline).lineLimit(1)
+                    Text(context.attributes.title).font(.caption.weight(.semibold)).lineLimit(1)
                 }
                 DynamicIslandExpandedRegion(.bottom) {
-                    Label(state.message, systemImage: state.symbol)
-                        .font(.subheadline.weight(.semibold))
-                        .foregroundStyle(state.color)
+                    VStack(spacing: 6) {
+                        PagerRing(number: context.attributes.number, color: state.color, filled: state == .ready, size: 56)
+                        Text(state.bilingualMessage)
+                            .font(.footnote.weight(.semibold))
+                            .foregroundStyle(state.color)
+                            .multilineTextAlignment(.center)
+                    }
+                    .frame(maxWidth: .infinity)
                 }
             } compactLeading: {
-                Text(context.attributes.number).monospacedDigit().foregroundStyle(state.color)
+                PagerRing(color: state.color, filled: state == .ready, size: 18)
             } compactTrailing: {
-                Circle().fill(state.color).frame(width: 10, height: 10)
+                Text(context.attributes.number).monospacedDigit().foregroundStyle(state.color)
             } minimal: {
-                Image(systemName: state.symbol).foregroundStyle(state.color)
+                Text(context.attributes.number)
+                    .monospacedDigit()
+                    .minimumScaleFactor(0.5)
+                    .foregroundStyle(state.color)
             }
             .keylineTint(state.color)
         }

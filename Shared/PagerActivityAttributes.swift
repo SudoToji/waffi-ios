@@ -18,3 +18,8 @@ struct PagerActivityAttributes: ActivityAttributes {
     var branchName: String
     var number: String
 }
+
+extension PagerActivityAttributes {
+    /// "Business | Branch", or just the Business when there is no Branch.
+    var title: String { branchName.isEmpty ? businessName : "\(businessName) | \(branchName)" }
+}
