@@ -29,7 +29,7 @@ final class PagerTicketModel: Identifiable {
         self.host = host
     }
 
-    var id: String { client.token }
+    nonisolated var id: String { client.token }
 
     var isEnded: Bool {
         if case .ended = phase { return true }
