@@ -9,10 +9,10 @@ struct WaffiButtonStyle: ButtonStyle {
     var compact = false
 
     func makeBody(configuration: Configuration) -> some View {
-        Body(configuration: configuration, style: self)
+        StyledLabel(configuration: configuration, style: self)
     }
 
-    private struct Body: View {
+    private struct StyledLabel: View {
         let configuration: ButtonStyle.Configuration
         let style: WaffiButtonStyle
         @Environment(\.isEnabled) private var isEnabled
