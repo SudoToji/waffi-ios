@@ -6,6 +6,7 @@ struct AccountView: View {
     let account: AppAccount
     @Environment(\.dismiss) private var dismiss
     @AppStorage(Appearance.storageKey) private var appearance = Appearance.system
+    @AppStorage(AppLanguage.storageKey) private var language = AppLanguage.system
 
     private var version: String {
         let info = Bundle.main.infoDictionary
@@ -25,6 +26,17 @@ struct AccountView: View {
                 .pickerStyle(.segmented)
             } header: {
                 Text("Appearance")
+            }
+            Section {
+                Picker("Language", selection: $language) {
+                    ForEach(AppLanguage.allCases) { $0.label.tag($0) }
+                }
+                .pickerStyle(.segmented)
+                .onChange(of: language) { language.apply() }
+            } header: {
+                Text("Language")
+            } footer: {
+                Text("Some text changes language the next time you open Waffi.")
             }
             Section {
                 Button("Sign out", role: .destructive) {

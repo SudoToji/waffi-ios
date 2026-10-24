@@ -1429,6 +1429,23 @@
         }
       }
     },
+    "Language": {
+      "comment": "Account: app language",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اللغة"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Language"
+          }
+        }
+      }
+    },
     "Light": {
       "comment": "Account: light or dark mode",
       "localizations": {
@@ -2813,6 +2830,23 @@
           "stringUnit": {
             "state": "translated",
             "value": "Six-digit Card number or international phone"
+          }
+        }
+      }
+    },
+    "Some text changes language the next time you open Waffi.": {
+      "comment": "Account: app language",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "بعض النصوص تتغير لغتها عند فتح وافي في المرة القادمة."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Some text changes language the next time you open Waffi."
           }
         }
       }

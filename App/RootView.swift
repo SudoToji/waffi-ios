@@ -7,6 +7,7 @@ struct RootView: View {
     @State private var session = SessionModel()
     @State private var ticket: PagerTicketModel?
     @AppStorage(Appearance.storageKey) private var appearance = Appearance.system
+    @AppStorage(AppLanguage.storageKey) private var language = AppLanguage.system
 
     var body: some View {
         Group {
@@ -42,6 +43,9 @@ struct RootView: View {
         .tint(Theme.accent)
         // The ticket screen is always dark; everything else follows the Appearance chosen in Account.
         .preferredColorScheme(ticket != nil ? .dark : appearance.scheme)
+        // The language chosen in Account, right to left for Arabic.
+        .environment(\.locale, language.locale)
+        .environment(\.layoutDirection, language.layoutDirection)
         .task { await session.start() }
         // iOS delivers a universal link as a browsing activity; a link opened another way arrives as a URL. Both open the ticket.
         .onContinueUserActivity(NSUserActivityTypeBrowsingWeb) { activity in
