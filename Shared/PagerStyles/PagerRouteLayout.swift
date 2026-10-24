@@ -38,14 +38,19 @@ struct PagerRouteLayout: View {
                 }
                 Spacer(minLength: 0)
                 // The Waffi mark at the far trailing edge, the Business logo in front of it on its leading side.
-                ZStack(alignment: .trailing) {
-                    WaffiMark(size: 40, round: true).padding(.top, 4)
-                    PagerLogoView(businessName: attributes.businessName, size: 48, tile: palette.brand, glyph: palette.onBrand, round: true)
-                        .overlay(Circle().strokeBorder(Color.white, lineWidth: 3))
-                        .shadow(color: .black.opacity(0.12), radius: 3, y: 2)
-                        .padding(.trailing, 30)
+                // With no Business logo, the Waffi mark alone (not twice).
+                if PagerLogo.image(forBusiness: attributes.businessName) != nil {
+                    ZStack(alignment: .trailing) {
+                        WaffiMark(size: 40, round: true).padding(.top, 4)
+                        PagerLogoView(businessName: attributes.businessName, size: 48, tile: palette.brand, glyph: palette.onBrand, round: true)
+                            .overlay(Circle().strokeBorder(Color.white, lineWidth: 3))
+                            .shadow(color: .black.opacity(0.12), radius: 3, y: 2)
+                            .padding(.trailing, 30)
+                    }
+                    .frame(width: 78, height: 48)
+                } else {
+                    WaffiMark(size: 48, round: true)
                 }
-                .frame(width: 78, height: 48)
             }
             HStack(spacing: 0) {
                 node(filled: true, ring: false) { Image(systemName: "checkmark") }
