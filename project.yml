@@ -31,6 +31,8 @@ targets:
       path: App/Info.plist
       properties:
         CFBundleDisplayName: Waffi
+        CFBundleVersion: "$(CURRENT_PROJECT_VERSION)"
+        CFBundleShortVersionString: "$(MARKETING_VERSION)"
         UILaunchScreen: {}
         UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait]
         UIRequiresFullScreen: true
@@ -55,6 +57,8 @@ targets:
       path: AppLiveActivity/Info.plist
       properties:
         CFBundleDisplayName: Waffi
+        CFBundleVersion: "$(CURRENT_PROJECT_VERSION)"
+        CFBundleShortVersionString: "$(MARKETING_VERSION)"
         CFBundleLocalizations: [en, ar]
         NSExtension:
           NSExtensionPointIdentifier: com.apple.widgetkit-extension
@@ -79,6 +83,8 @@ targets:
       properties:
         CFBundlePackageType: APPL
         CFBundleDisplayName: Waffi
+        CFBundleVersion: "$(CURRENT_PROJECT_VERSION)"
+        CFBundleShortVersionString: "$(MARKETING_VERSION)"
         UILaunchScreen: {}
         UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait]
         UIRequiresFullScreen: true
@@ -107,6 +113,8 @@ targets:
       path: ClipLiveActivity/Info.plist
       properties:
         CFBundleDisplayName: Waffi
+        CFBundleVersion: "$(CURRENT_PROJECT_VERSION)"
+        CFBundleShortVersionString: "$(MARKETING_VERSION)"
         CFBundleLocalizations: [en, ar]
         NSExtension:
           NSExtensionPointIdentifier: com.apple.widgetkit-extension
