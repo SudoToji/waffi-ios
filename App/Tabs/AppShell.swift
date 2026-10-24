@@ -65,7 +65,9 @@ struct AppShell: View {
             )
             // The Customer Tiers switch is read again on foreground; the tab starts over when it flips.
             .id(features?["customer_tiers"] == true)
-        case .campaigns: ComingSoonView(tab: tab, session: session, account: account)
+        case .campaigns:
+            CampaignsView(session: session, account: account, tiersOn: features?["customer_tiers"] == true)
+                .id(features?["customer_tiers"] == true)
         }
     }
 

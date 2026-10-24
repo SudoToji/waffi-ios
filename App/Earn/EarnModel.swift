@@ -127,6 +127,9 @@ final class EarnModel {
         }
     }
 
+    /// The Branch no longer works for this person: an offer redemption was refused for it (the counter does the same after an Operation).
+    func offerBranchRefused() async { await branchRefused() }
+
     private func branchRefused() async {
         UserDefaults.standard.removeObject(forKey: branchKey)
         branch = nil

@@ -5040,6 +5040,2582 @@
           }
         }
       }
+    },
+    "Messages": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الرسائل"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Messages"
+          }
+        }
+      }
+    },
+    "New message": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "رسالة جديدة"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "New message"
+          }
+        }
+      }
+    },
+    "Saved messages": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الرسائل المحفوظة"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Saved messages"
+          }
+        }
+      }
+    },
+    "Scheduled": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "المجدولة"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scheduled"
+          }
+        }
+      }
+    },
+    "No messages yet": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لا توجد رسائل بعد"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No messages yet"
+          }
+        }
+      }
+    },
+    "Write your first message. It saves itself, and you can send it again any time.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اكتب أول رسالة. تُحفظ تلقائيًا ويمكنك إرسالها مرة أخرى في أي وقت."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Write your first message. It saves itself, and you can send it again any time."
+          }
+        }
+      }
+    },
+    "Show older messages": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "عرض الرسائل الأقدم"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show older messages"
+          }
+        }
+      }
+    },
+    "Return to drafts": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إعادة إلى المسودات"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Return to drafts"
+          }
+        }
+      }
+    },
+    "Stop sending": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إيقاف الإرسال"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stop sending"
+          }
+        }
+      }
+    },
+    "Delete": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حذف"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Delete"
+          }
+        }
+      }
+    },
+    "Go back": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "رجوع"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Go back"
+          }
+        }
+      }
+    },
+    "Cancel this schedule?": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "هل تريد إلغاء الجدولة؟"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cancel this schedule?"
+          }
+        }
+      }
+    },
+    "Stop sending this campaign?": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "هل تريد إيقاف إرسال هذه الحملة؟"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stop sending this campaign?"
+          }
+        }
+      }
+    },
+    "Delete campaign?": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حذف الحملة؟"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Delete campaign?"
+          }
+        }
+      }
+    },
+    "Schedule cancelled. Your message is back in drafts.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تم إلغاء الجدولة وإعادة الرسالة إلى المسودات."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schedule cancelled. Your message is back in drafts."
+          }
+        }
+      }
+    },
+    "Campaign stopped. Messages not sent yet were skipped.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تم إيقاف الحملة وتخطي الرسائل التي لم تُرسل بعد."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Campaign stopped. Messages not sent yet were skipped."
+          }
+        }
+      }
+    },
+    "Campaign deleted.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تم حذف الحملة."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Campaign deleted."
+          }
+        }
+      }
+    },
+    "Your message returns to drafts so you can edit it or choose another time.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ستعود رسالتك إلى المسودات لتعديلها أو اختيار موعد آخر."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your message returns to drafts so you can edit it or choose another time."
+          }
+        }
+      }
+    },
+    "Messages not sent yet are skipped. Messages already sent cannot be taken back.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الرسائل التي لم تُرسل بعد ستُتخطى. لا يمكن سحب الرسائل التي أُرسلت بالفعل."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Messages not sent yet are skipped. Messages already sent cannot be taken back."
+          }
+        }
+      }
+    },
+    "This campaign will disappear from your lists and activity. Coupons already sent stay valid.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ستختفي هذه الحملة من القوائم والنشاط. تظل القسائم المرسلة صالحة."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This campaign will disappear from your lists and activity. Coupons already sent stay valid."
+          }
+        }
+      }
+    },
+    "Delivery activated for the scheduled time.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تم تفعيل الإرسال في الموعد المحدد."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Delivery activated for the scheduled time."
+          }
+        }
+      }
+    },
+    "Message sent": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تم إرسال الرسالة"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Message sent"
+          }
+        }
+      }
+    },
+    "Sent to %lld Customers": {
+      "localizations": {
+        "ar": {
+          "variations": {
+            "plural": {
+              "zero": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "لم تُرسل إلى أي عميل"
+                }
+              },
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "أُرسلت إلى عميل واحد"
+                }
+              },
+              "two": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "أُرسلت إلى عميلين"
+                }
+              },
+              "few": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "أُرسلت إلى %lld عملاء"
+                }
+              },
+              "many": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "أُرسلت إلى %lld عميلًا"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "أُرسلت إلى %lld عميل"
+                }
+              }
+            }
+          }
+        },
+        "en": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Sent to %lld Customer"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Sent to %lld Customers"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Sent %lld times": {
+      "localizations": {
+        "ar": {
+          "variations": {
+            "plural": {
+              "zero": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "لم تُرسل"
+                }
+              },
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "أُرسلت مرة واحدة"
+                }
+              },
+              "two": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "أُرسلت مرتين"
+                }
+              },
+              "few": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "أُرسلت %lld مرات"
+                }
+              },
+              "many": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "أُرسلت %lld مرة"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "أُرسلت %lld مرة"
+                }
+              }
+            }
+          }
+        },
+        "en": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Sent once"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Sent %lld times"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "just now": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الآن"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "just now"
+          }
+        }
+      }
+    },
+    "last %@": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "آخر مرة %@"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "last %@"
+          }
+        }
+      }
+    },
+    "%lld delivered": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تم تسليم %lld"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld delivered"
+          }
+        }
+      }
+    },
+    "Sending now": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "جارٍ الإرسال"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sending now"
+          }
+        }
+      }
+    },
+    "Send again": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إرسال مرة أخرى"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Send again"
+          }
+        }
+      }
+    },
+    "Edit as a new draft": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تعديل كمسودة جديدة"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Edit as a new draft"
+          }
+        }
+      }
+    },
+    "Delivery results": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "نتائج الإرسال"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Delivery results"
+          }
+        }
+      }
+    },
+    "More": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "المزيد"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "More"
+          }
+        }
+      }
+    },
+    "Opens a new draft with this message": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يفتح مسودة جديدة بهذه الرسالة"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Opens a new draft with this message"
+          }
+        }
+      }
+    },
+    "Opens the draft": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يفتح المسودة"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Opens the draft"
+          }
+        }
+      }
+    },
+    "Draft · saved": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مسودة · محفوظة"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Draft · saved"
+          }
+        }
+      }
+    },
+    "Send": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إرسال"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Send"
+          }
+        }
+      }
+    },
+    "Delivery paused": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الإرسال متوقف مؤقتًا"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Delivery paused"
+          }
+        }
+      }
+    },
+    "Activate delivery": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تفعيل الإرسال"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Activate delivery"
+          }
+        }
+      }
+    },
+    "Cancel schedule": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إلغاء الجدولة"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cancel schedule"
+          }
+        }
+      }
+    },
+    "%@ coupon attached": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مرفق قسيمة: %@"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ coupon attached"
+          }
+        }
+      }
+    },
+    "Send to %lld Customers now?": {
+      "localizations": {
+        "ar": {
+          "variations": {
+            "plural": {
+              "zero": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "إرسال الآن؟"
+                }
+              },
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "إرسال إلى عميل واحد الآن؟"
+                }
+              },
+              "two": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "إرسال إلى عميلين الآن؟"
+                }
+              },
+              "few": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "إرسال إلى %lld عملاء الآن؟"
+                }
+              },
+              "many": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "إرسال إلى %lld عميلًا الآن؟"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "إرسال إلى %lld عميل الآن؟"
+                }
+              }
+            }
+          }
+        },
+        "en": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Send to %lld Customer now?"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Send to %lld Customers now?"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Send this message now?": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إرسال هذه الرسالة الآن؟"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Send this message now?"
+          }
+        }
+      }
+    },
+    "The message goes to the customer’s wallet pass. Whether the notification shows depends on the customer’s settings.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تذهب الرسالة إلى بطاقة العميل في المحفظة. ظهور الإشعار يعتمد على إعدادات العميل."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The message goes to the customer’s wallet pass. Whether the notification shows depends on the customer’s settings."
+          }
+        }
+      }
+    },
+    "Waiting": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "قيد الانتظار"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Waiting"
+          }
+        }
+      }
+    },
+    "Placed on the pass": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "وُضعت على البطاقة"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Placed on the pass"
+          }
+        }
+      }
+    },
+    "Skipped": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تم التخطي"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Skipped"
+          }
+        }
+      }
+    },
+    "Failed": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "فشل"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Failed"
+          }
+        }
+      }
+    },
+    "Needs review": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تحتاج مراجعة"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Needs review"
+          }
+        }
+      }
+    },
+    "Accepted means the message was placed on the customer’s pass. It does not confirm that a customer saw it. Uncertain outcomes are not automatically resent.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مقبولة تعني أن الرسالة وُضعت على بطاقة العميل. لا يؤكد ذلك أن العميل رآها. النتائج غير المؤكدة لا يُعاد إرسالها تلقائيًا."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Accepted means the message was placed on the customer’s pass. It does not confirm that a customer saw it. Uncertain outcomes are not automatically resent."
+          }
+        }
+      }
+    },
+    "Edit draft": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تعديل المسودة"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Edit draft"
+          }
+        }
+      }
+    },
+    "Not saved yet": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لم تُحفظ بعد"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Not saved yet"
+          }
+        }
+      }
+    },
+    "Saving…": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "جارٍ الحفظ…"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Saving…"
+          }
+        }
+      }
+    },
+    "Saved": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تم الحفظ"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Saved"
+          }
+        }
+      }
+    },
+    "%@ Tap to try again.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ اضغط للمحاولة مرة أخرى."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ Tap to try again."
+          }
+        }
+      }
+    },
+    "Delivery is paused. You can schedule a message, but it will not send until the platform admin switches delivery on.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الإرسال متوقف حاليًا. يمكنك جدولة الرسالة، لكنها لن تُرسل حتى تعيد إدارة المنصة تفعيل الإرسال."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Delivery is paused. You can schedule a message, but it will not send until the platform admin switches delivery on."
+          }
+        }
+      }
+    },
+    "Send now · %lld Customers": {
+      "localizations": {
+        "ar": {
+          "variations": {
+            "plural": {
+              "zero": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "إرسال الآن"
+                }
+              },
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "إرسال الآن · عميل واحد"
+                }
+              },
+              "two": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "إرسال الآن · عميلان"
+                }
+              },
+              "few": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "إرسال الآن · %lld عملاء"
+                }
+              },
+              "many": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "إرسال الآن · %lld عميلًا"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "إرسال الآن · %lld عميل"
+                }
+              }
+            }
+          }
+        },
+        "en": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Send now · %lld Customer"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Send now · %lld Customers"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Send now": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إرسال الآن"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Send now"
+          }
+        }
+      }
+    },
+    "Schedule for later": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "جدولة لوقت لاحق"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schedule for later"
+          }
+        }
+      }
+    },
+    "Send on": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "موعد الإرسال"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Send on"
+          }
+        }
+      }
+    },
+    "Your time zone: %@": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "منطقتك الزمنية: %@"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your time zone: %@"
+          }
+        }
+      }
+    },
+    "Scheduled for %@": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مجدولة في %@"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scheduled for %@"
+          }
+        }
+      }
+    },
+    "Schedule saved. Activate delivery when you are ready.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تم حفظ الجدولة. فعّل الإرسال عندما تكون جاهزًا."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schedule saved. Activate delivery when you are ready."
+          }
+        }
+      }
+    },
+    "Schedule · %@": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "جدولة · %@"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schedule · %@"
+          }
+        }
+      }
+    },
+    "Send now instead": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إرسال الآن بدلًا من ذلك"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Send now instead"
+          }
+        }
+      }
+    },
+    "Google Wallet shows at most 3 message alerts a day per card. After that, messages still arrive on the card, without an alert.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يعرض Google Wallet 3 تنبيهات للرسائل كحد أقصى يوميًا لكل بطاقة. بعد ذلك تصل الرسائل إلى البطاقة بدون تنبيه."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Google Wallet shows at most 3 message alerts a day per card. After that, messages still arrive on the card, without an alert."
+          }
+        }
+      }
+    },
+    "Message language": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لغة الرسالة"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Message language"
+          }
+        }
+      }
+    },
+    "Message": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الرسالة"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Message"
+          }
+        }
+      }
+    },
+    "Message title": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "عنوان الرسالة"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Message title"
+          }
+        }
+      }
+    },
+    "Also write it in %@": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اكتب الرسالة أيضًا باللغة %@"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Also write it in %@"
+          }
+        }
+      }
+    },
+    "Customers whose language is %@ get this version. Everyone else gets the main message.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "العملاء الذين لغتهم %@ يصلهم هذا الإصدار، وبقية العملاء تصلهم الرسالة الأساسية."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Customers whose language is %@ get this version. Everyone else gets the main message."
+          }
+        }
+      }
+    },
+    "%lld/50": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld/50"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld/50"
+          }
+        }
+      }
+    },
+    "%lld/240": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld/240"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld/240"
+          }
+        }
+      }
+    },
+    "Shown on the Customer's pass": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تظهر على بطاقة العميل"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Shown on the Customer's pass"
+          }
+        }
+      }
+    },
+    "Audience": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الجمهور"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Audience"
+          }
+        }
+      }
+    },
+    "Agreed to marketing only": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الموافقون على التسويق فقط"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Agreed to marketing only"
+          }
+        }
+      }
+    },
+    "%lld with a wallet pass": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld لديهم بطاقة في المحفظة"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld with a wallet pass"
+          }
+        }
+      }
+    },
+    "%lld Customers will get this": {
+      "localizations": {
+        "ar": {
+          "variations": {
+            "plural": {
+              "zero": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "لن تصل إلى أي عميل"
+                }
+              },
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "سيستلمها عميل واحد"
+                }
+              },
+              "two": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "سيستلمها عميلان"
+                }
+              },
+              "few": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "سيستلمها %lld عملاء"
+                }
+              },
+              "many": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "سيستلمها %lld عميلًا"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "سيستلمها %lld عميل"
+                }
+              }
+            }
+          }
+        },
+        "en": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld Customer will get this"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld Customers will get this"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Days without activity: %lld": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "عدد الأيام دون نشاط: %lld"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Days without activity: %lld"
+          }
+        }
+      }
+    },
+    "Birthday from": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "عيد الميلاد من"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Birthday from"
+          }
+        }
+      }
+    },
+    "Birthday to": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "عيد الميلاد إلى"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Birthday to"
+          }
+        }
+      }
+    },
+    "Day": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اليوم"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Day"
+          }
+        }
+      }
+    },
+    "Select tiers": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اختر الشرائح"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Select tiers"
+          }
+        }
+      }
+    },
+    "Create customer tiers on the Customers page first.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أضف شرائح العملاء أولًا من صفحة العملاء."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Create customer tiers on the Customers page first."
+          }
+        }
+      }
+    },
+    "Select a Branch": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اختر الفرع"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Select a Branch"
+          }
+        }
+      }
+    },
+    "Six-digit customer card number": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "رقم بطاقة العميل المكون من ستة أرقام"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Six-digit customer card number"
+          }
+        }
+      }
+    },
+    "PREVIEW · LOCK SCREEN": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "معاينة · شاشة القفل"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "PREVIEW · LOCK SCREEN"
+          }
+        }
+      }
+    },
+    "now": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الآن"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "now"
+          }
+        }
+      }
+    },
+    "Write a message to see it here.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اكتب رسالة لتظهر هنا."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Write a message to see it here."
+          }
+        }
+      }
+    },
+    "All active-card customers": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "كل العملاء ذوي البطاقات النشطة"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "All active-card customers"
+          }
+        }
+      }
+    },
+    "Inactive customers": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "العملاء غير النشطين"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Inactive customers"
+          }
+        }
+      }
+    },
+    "Near a reward": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "قريبون من مكافأة"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Near a reward"
+          }
+        }
+      }
+    },
+    "Selected tiers": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "شرائح محددة"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Selected tiers"
+          }
+        }
+      }
+    },
+    "Birthday today": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "عيد ميلادهم اليوم"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Birthday today"
+          }
+        }
+      }
+    },
+    "Birthday this month": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "عيد ميلادهم هذا الشهر"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Birthday this month"
+          }
+        }
+      }
+    },
+    "Birthday on a day or between two days": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "عيد ميلادهم في يوم أو فترة محددة"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Birthday on a day or between two days"
+          }
+        }
+      }
+    },
+    "One customer": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "عميل واحد"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "One customer"
+          }
+        }
+      }
+    },
+    "Joined at a Branch": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "انضموا في فرع"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Joined at a Branch"
+          }
+        }
+      }
+    },
+    "%lld days without activity": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld يومًا دون نشاط"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld days without activity"
+          }
+        }
+      }
+    },
+    "Customers with at least one active loyalty card.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "العملاء الذين لديهم بطاقة ولاء نشطة واحدة على الأقل."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Customers with at least one active loyalty card."
+          }
+        }
+      }
+    },
+    "Customers with an active card and no activity in the last %lld days.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "العملاء ذوو البطاقات النشطة الذين لم يسجلوا نشاطًا خلال آخر %lld يومًا."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Customers with an active card and no activity in the last %lld days."
+          }
+        }
+      }
+    },
+    "Customers at 80% or more of an available reward target, who have not reached it yet. Used one-time rewards and locked membership rewards are excluded.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "العملاء الذين بلغوا ٨٠٪ أو أكثر من هدف مكافأة متاحة ولم يصلوا إليه بعد. تُستبعد المكافآت المستخدمة لمرة واحدة والمكافآت المقيدة بمستوى عضوية غير متاح."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Customers at 80% or more of an available reward target, who have not reached it yet. Used one-time rewards and locked membership rewards are excluded."
+          }
+        }
+      }
+    },
+    "Only customers in the selected tiers, including owner overrides.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "فقط العملاء في الشرائح المحددة، بما في ذلك تعيينات المالك."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Only customers in the selected tiers, including owner overrides."
+          }
+        }
+      }
+    },
+    "Customers with an active card whose birthday is today (Cairo time). Checked again at the moment of sending, so nothing goes out after midnight.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "العملاء ذوو البطاقات النشطة الذين يوافق عيد ميلادهم اليوم (بتوقيت القاهرة). يُعاد التحقق لحظة الإرسال، فلا يُرسل شيء بعد منتصف الليل."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Customers with an active card whose birthday is today (Cairo time). Checked again at the moment of sending, so nothing goes out after midnight."
+          }
+        }
+      }
+    },
+    "Customers with an active card whose birthday is in the current month (Cairo time). Checked again at the moment of sending.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "العملاء ذوو البطاقات النشطة الذين يقع عيد ميلادهم في الشهر الحالي (بتوقيت القاهرة). يُعاد التحقق لحظة الإرسال."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Customers with an active card whose birthday is in the current month (Cairo time). Checked again at the moment of sending."
+          }
+        }
+      }
+    },
+    "Customers with an active card whose birthday falls on or between the two days you choose, whatever the year. Pick the same day twice for a single day. Checked again at the moment of sending.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "العملاء ذوو البطاقات النشطة الذين يقع عيد ميلادهم في اليومين المحددين أو بينهما، أيًّا كانت السنة. اختر اليوم نفسه مرتين ليوم واحد. يُعاد التحقق لحظة الإرسال."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Customers with an active card whose birthday falls on or between the two days you choose, whatever the year. Pick the same day twice for a single day. Checked again at the moment of sending."
+          }
+        }
+      }
+    },
+    "Only the selected customer card. Marketing consent is still required.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "فقط بطاقة العميل المحدد. موافقة التسويق مطلوبة."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Only the selected customer card. Marketing consent is still required."
+          }
+        }
+      }
+    },
+    "Customers who signed up at the chosen Branch. Customers who joined online, or whose Branch is not recorded, are never included. If the Branch closes or is Locked, the campaign reaches nobody until it works again.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "العملاء الذين سجّلوا في الفرع المختار. لا يشمل من انضموا عبر الإنترنت أو من لم يُسجَّل فرعهم. إذا أُغلق الفرع أو قُفل، لا تصل الحملة إلى أحد حتى يعمل الفرع من جديد."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Customers who signed up at the chosen Branch. Customers who joined online, or whose Branch is not recorded, are never included. If the Branch closes or is Locked, the campaign reaches nobody until it works again."
+          }
+        }
+      }
+    },
+    "Attach a coupon": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إرفاق قسيمة"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Attach a coupon"
+          }
+        }
+      }
+    },
+    "Coupon": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "قسيمة"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Coupon"
+          }
+        }
+      }
+    },
+    "Coupon: %@": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "قسيمة: %@"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Coupon: %@"
+          }
+        }
+      }
+    },
+    "Coupon type": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "نوع القسيمة"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Coupon type"
+          }
+        }
+      }
+    },
+    "Coupon offer": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "عرض القسيمة"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Coupon offer"
+          }
+        }
+      }
+    },
+    "Item": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الصنف"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Item"
+          }
+        }
+      }
+    },
+    "Coffee": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "قهوة"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Coffee"
+          }
+        }
+      }
+    },
+    "Discount (%)": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الخصم (%)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Discount (%)"
+          }
+        }
+      }
+    },
+    "Discount (EGP)": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الخصم (جنيه)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Discount (EGP)"
+          }
+        }
+      }
+    },
+    "Customers will see: %@": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ما سيراه العملاء: %@"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Customers will see: %@"
+          }
+        }
+      }
+    },
+    "Coupon expiry": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "انتهاء صلاحية القسيمة"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Coupon expiry"
+          }
+        }
+      }
+    },
+    "Duration after processing starts": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مدة من بدء المعالجة"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Duration after processing starts"
+          }
+        }
+      }
+    },
+    "Expiry date and time": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تاريخ ووقت انتهاء الصلاحية"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Expiry date and time"
+          }
+        }
+      }
+    },
+    "Valid for %lld hours": {
+      "localizations": {
+        "ar": {
+          "variations": {
+            "plural": {
+              "zero": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "مدة الصلاحية: 0 ساعة"
+                }
+              },
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "مدة الصلاحية: ساعة واحدة"
+                }
+              },
+              "two": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "مدة الصلاحية: ساعتان"
+                }
+              },
+              "few": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "مدة الصلاحية: %lld ساعات"
+                }
+              },
+              "many": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "مدة الصلاحية: %lld ساعة"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "مدة الصلاحية: %lld ساعة"
+                }
+              }
+            }
+          }
+        },
+        "en": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Valid for %lld hour"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Valid for %lld hours"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "A one-time in-store offer. Staff redeem it using the customer’s card; no stamps or points are deducted.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "عرض يستخدم مرة واحدة داخل المتجر. يستبدله الموظف برقم بطاقة العميل دون خصم أختام أو نقاط."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A one-time in-store offer. Staff redeem it using the customer’s card; no stamps or points are deducted."
+          }
+        }
+      }
+    },
+    "Other offers": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "عروض أخرى"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Other offers"
+          }
+        }
+      }
+    },
+    "Birthday offers and Coupons are separate from loyalty Rewards. They do not spend the Card balance.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "عروض عيد الميلاد والقسائم منفصلة عن مكافآت الولاء، ولا تخصم من رصيد البطاقة."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Birthday offers and Coupons are separate from loyalty Rewards. They do not spend the Card balance."
+          }
+        }
+      }
+    },
+    "No birthday offer available.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لا يوجد عرض عيد ميلاد متاح."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No birthday offer available."
+          }
+        }
+      }
+    },
+    "No active campaign coupons for this card.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لا توجد قسائم حملات نشطة لهذه البطاقة."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No active campaign coupons for this card."
+          }
+        }
+      }
+    },
+    "%@. Confirm only after providing this offer. This coupon can be redeemed once.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@. أكد بعد تقديم العرض للعميل. يمكن استبدال هذه القسيمة مرة واحدة."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@. Confirm only after providing this offer. This coupon can be redeemed once."
+          }
+        }
+      }
+    },
+    "%@. Hand over the complimentary item, then confirm. This offer can be redeemed once across the Business. It does not change stamps or Saved Gifts.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@. سلّم الصنف المجاني ثم أكّد. يمكن استبدال هذا العرض مرة واحدة في النشاط التجاري كله، ولا يغيّر الأختام أو الهدايا المحفوظة."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@. Hand over the complimentary item, then confirm. This offer can be redeemed once across the Business. It does not change stamps or Saved Gifts."
+          }
+        }
+      }
+    },
+    "Redeem birthday offer": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "استبدال عرض عيد الميلاد"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Redeem birthday offer"
+          }
+        }
+      }
+    },
+    "Redeem coupon": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "استبدال القسيمة"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Redeem coupon"
+          }
+        }
+      }
+    },
+    "Birthday offer redeemed.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تم استبدال عرض عيد الميلاد."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Birthday offer redeemed."
+          }
+        }
+      }
+    },
+    "Coupon redeemed and recorded in transactions.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تم استبدال القسيمة وتسجيل العملية."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Coupon redeemed and recorded in transactions."
+          }
+        }
+      }
+    },
+    "Valid until %@ (Cairo time)": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "صالح حتى %@ (بتوقيت القاهرة)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Valid until %@ (Cairo time)"
+          }
+        }
+      }
+    },
+    "error.CAMPAIGN_CHANGED": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تغيرت هذه الرسالة في مكان آخر. أعد فتحها قبل المحاولة مجددًا."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This message changed somewhere else. Reopen it before trying again."
+          }
+        }
+      }
+    },
+    "error.CAMPAIGN_NOT_FOUND": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "هذه الحملة غير متاحة."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This campaign is unavailable."
+          }
+        }
+      }
+    },
+    "error.CAMPAIGN_SCHEDULE_INVALID": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اختر وقتًا صالحًا بعد دقيقة على الأقل وخلال السنة القادمة."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Choose a valid time at least one minute from now and within the next year."
+          }
+        }
+      }
+    },
+    "error.CAMPAIGN_TEST_RECIPIENT_INVALID": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اختر بطاقة في هذا النشاط مضافة إلى Apple Wallet أو Google Wallet على هاتف، وافق صاحبها على الرسائل، وتطابق الجمهور المحدد."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Choose a card in this business that is in Apple Wallet or Google Wallet on a phone, opted into messages, and matching the selected audience."
+          }
+        }
+      }
+    },
+    "error.COUPON_UNAVAILABLE": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "هذه القسيمة غير متاحة أو منتهية أو سبق استبدالها."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This coupon is unavailable, expired, or already redeemed."
+          }
+        }
+      }
+    },
+    "error.BIRTHDAY_OFFER_UNAVAILABLE": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "عرض عيد الميلاد غير متاح أو منتهٍ أو سبق استبداله."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This birthday offer is unavailable, expired, or already redeemed."
+          }
+        }
+      }
+    },
+    "error.GOOGLE_WALLET_ASSETS_REQUIRED": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "محفظة Google ليست جاهزة لهذا البرنامج بعد. يمكنك استخدام بطاقتك هنا."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Google Wallet is not ready for this program yet. You can still use your card here."
+          }
+        }
+      }
+    },
+    "error.GOOGLE_WALLET_NOT_CONFIGURED": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "محفظة Google غير متاحة بعد. يمكنك استخدام بطاقتك هنا."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Google Wallet is not available yet. You can still use your card here."
+          }
+        }
+      }
+    },
+    "error.GOOGLE_WALLET_CREDENTIALS_INVALID": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "محفظة Google غير متاحة مؤقتًا. يرجى المحاولة لاحقًا."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Google Wallet is temporarily unavailable. Please try again later."
+          }
+        }
+      }
+    },
+    "error.GOOGLE_WALLET_UNAVAILABLE": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تعذر تجهيز بطاقة محفظة Google. يرجى المحاولة مرة أخرى."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "We could not prepare your Google Wallet pass. Please try again."
+          }
+        }
+      }
     }
   },
   "version": "1.0"

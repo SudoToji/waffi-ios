@@ -42,8 +42,8 @@ actor ApiClient {
         try decode(await authorized(path, query: [], method: "PUT", body: json))
     }
 
-    func delete<T: Decodable>(_ path: String) async throws -> T {
-        try decode(await authorized(path, query: [], method: "DELETE", body: nil))
+    func delete<T: Decodable>(_ path: String, json: (any Encodable)? = nil) async throws -> T {
+        try decode(await authorized(path, query: [], method: "DELETE", body: json))
     }
 
     func signIn(email: String, password: String) async throws -> AppAccount {

@@ -24,6 +24,7 @@ struct CardScreen: View {
                     }
                     if model.canEarn { EarnPanel(model: model, card: card).id(card.id) }
                     RewardsPanel(model: model, card: card)
+                    CardOffersPanel(earn: model, cardId: card.id).id(card.id)
                     if !model.canEarn && !model.canRedeem {
                         Text("You have view-only access. Ask your owner for permission to add progress or redeem rewards.")
                             .font(.subheadline)
