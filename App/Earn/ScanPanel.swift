@@ -1,7 +1,8 @@
 import AVFoundation
 import SwiftUI
 
-/// The dark camera panel at the top of the Earn & redeem tab. Camera denied or missing: it says so and how to allow it; search and Manual Code still work.
+/// The dark camera panel at the top of the Earn & redeem tab. The camera stays off until it is tapped, and turns off again when the
+/// tab is left or closed with the X. Camera denied or missing: it says so and how to allow it; search and Manual Code still work.
 struct ScanPanel: View {
     /// A lookup is running: the camera pauses reading.
     let busy: Bool
@@ -12,7 +13,7 @@ struct ScanPanel: View {
     @Environment(\.scenePhase) private var scenePhase
     @Environment(\.openURL) private var openURL
     @State private var access = ScanPanel.currentAccess
-    @State private var torchOn = false
+    @State private var cameraOn = false
 
     private static var currentAccess: Access {
         switch AVCaptureDevice.authorizationStatus(for: .video) {
@@ -22,12 +23,12 @@ struct ScanPanel: View {
         }
     }
 
-    private var hasTorch: Bool { AVCaptureDevice.default(for: .video)?.hasTorch == true }
-
     var body: some View {
         ZStack {
             LinearGradient(colors: [Color(red: 0.18, green: 0.27, blue: 0.22), Color(red: 0.07, green: 0.10, blue: 0.08)], startPoint: .top, endPoint: .bottom)
-            if access == .allowed && QRScannerView.canScan {
+            if !cameraOn {
+                startButton
+            } else if access == .allowed && QRScannerView.canScan {
                 QRScannerView { text in if !busy { onScan(text) } }
                 viewfinder
             } else if access == .undetermined {
@@ -38,8 +39,9 @@ struct ScanPanel: View {
         }
         .frame(height: 300)
         .clipShape(RoundedRectangle(cornerRadius: 28))
-        .task {
-            if access == .undetermined {
+        // The permission prompt comes with the first tap, not when the tab opens.
+        .task(id: cameraOn) {
+            if cameraOn && access == .undetermined {
                 access = await AVCaptureDevice.requestAccess(for: .video) ? .allowed : .denied
             }
         }
@@ -47,7 +49,28 @@ struct ScanPanel: View {
         .onChange(of: scenePhase) {
             if scenePhase == .active { access = Self.currentAccess }
         }
-        .onDisappear { setTorch(false) }
+        .onDisappear { cameraOn = false }
+    }
+
+    // MARK: Camera off until tapped
+
+    private var startButton: some View {
+        Button { cameraOn = true } label: {
+            VStack(spacing: 12) {
+                Image(systemName: "qrcode.viewfinder")
+                    .font(.system(size: 52, weight: .regular))
+                Text("Tap to scan a Card").font(.headline)
+                Text("Opens the camera to read the Customer's Card QR.")
+                    .font(.subheadline)
+                    .foregroundStyle(.white.opacity(0.75))
+            }
+            .multilineTextAlignment(.center)
+            .foregroundStyle(.white)
+            .padding(20)
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .contentShape(Rectangle())
+        }
+        .buttonStyle(.plain)
     }
 
     // MARK: Camera on
@@ -76,21 +99,15 @@ struct ScanPanel: View {
             .padding(14)
         }
         .overlay(alignment: .topTrailing) {
-            if hasTorch {
-                Button {
-                    torchOn.toggle()
-                    setTorch(torchOn)
-                } label: {
-                    Label("Torch", systemImage: torchOn ? "bolt.fill" : "bolt")
-                        .labelStyle(.iconOnly)
-                        .font(.body.weight(.semibold))
-                        .foregroundStyle(.white)
-                        .frame(width: 44, height: 44)
-                        .background(.white.opacity(0.18), in: .circle)
-                }
-                .accessibilityValue(torchOn ? Text("On") : Text("Off"))
-                .padding(10)
+            Button { cameraOn = false } label: {
+                Label("Turn off camera", systemImage: "xmark")
+                    .labelStyle(.iconOnly)
+                    .font(.body.weight(.semibold))
+                    .foregroundStyle(.white)
+                    .frame(width: 44, height: 44)
+                    .background(.white.opacity(0.18), in: .circle)
             }
+            .padding(10)
         }
         .overlay(alignment: .bottom) {
             Text("Point at the Customer's Card QR")
@@ -126,16 +143,6 @@ struct ScanPanel: View {
         .multilineTextAlignment(.center)
         .foregroundStyle(.white)
         .padding(20)
-    }
-
-    private func setTorch(_ on: Bool) {
-        guard let device = AVCaptureDevice.default(for: .video), device.hasTorch else { return }
-        do {
-            try device.lockForConfiguration()
-            device.torchMode = on ? .on : .off
-            device.unlockForConfiguration()
-        } catch {}
-        if !on { torchOn = false }
     }
 }
 

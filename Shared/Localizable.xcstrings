@@ -1847,6 +1847,23 @@
         }
       }
     },
+    "Opens the camera to read the Customer's Card QR.": {
+      "comment": "Earn & redeem: camera panel",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يفتح الكاميرا لقراءة رمز QR في بطاقة العميل."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Opens the camera to read the Customer's Card QR."
+          }
+        }
+      }
+    },
     "Order": {
       "localizations": {
         "ar": {
@@ -2849,6 +2866,23 @@
         }
       }
     },
+    "Tap to scan a Card": {
+      "comment": "Earn & redeem: camera panel",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اضغط لمسح بطاقة"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tap to scan a Card"
+          }
+        }
+      }
+    },
     "The Branch you were serving at is no longer available. Choose another.": {
       "localizations": {
         "ar": {
@@ -2974,6 +3008,23 @@
           "stringUnit": {
             "state": "translated",
             "value": "Torch"
+          }
+        }
+      }
+    },
+    "Turn off camera": {
+      "comment": "Earn & redeem: camera panel",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إيقاف الكاميرا"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Turn off camera"
           }
         }
       }
