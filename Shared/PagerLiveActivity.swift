@@ -9,7 +9,7 @@ struct PagerLiveActivity: Widget {
         ActivityConfiguration(for: PagerActivityAttributes.self) { context in
             let palette = PagerPalette(context.attributes.style)
             PagerLockScreenView(attributes: context.attributes, state: context.state.state)
-                // Nil (a transparent style) lets the system's see-through material show.
+                // A transparent style is a see-through dim, so the wallpaper shows.
                 .activityBackgroundTint(palette.background)
                 .activitySystemActionForegroundColor(palette.ink)
         } dynamicIsland: { context in

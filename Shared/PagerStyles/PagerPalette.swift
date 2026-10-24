@@ -5,7 +5,7 @@ import SwiftUI
 /// The brand colour is used as chosen for fills (logo tile, filled ring, stub) with black or white on top. As text, ring dots and
 /// track lines it is used only where it reaches 3:1 on the card (what the web preview does); otherwise the plain text colour is.
 struct PagerPalette {
-    /// The card colour for `activityBackgroundTint`; nil lets the system's see-through material show.
+    /// The card colour for `activityBackgroundTint` (a see-through dim when transparent); nil only for the Island.
     let background: Color?
     let ink: Color
     let secondary: Color
@@ -20,7 +20,8 @@ struct PagerPalette {
     /// - Parameter island: the Dynamic Island, which is always black whatever the style.
     init(_ style: PagerStyle, island: Bool = false) {
         let (light, surface) = Self.surface(of: style, island: island)
-        background = (island || style.background == .transparent) ? nil : PagerColors.color(surface)
+        // Transparent: a light dim over the wallpaper. Nil would give iOS's default card, which is near-opaque black.
+        background = island ? nil : style.background == .transparent ? Color.black.opacity(0.35) : PagerColors.color(surface)
         ink = light ? PagerColors.color("#1B1B1A") : .white
         secondary = light ? PagerColors.color("#5C5C57") : Color.white.opacity(0.7)
         hairline = light ? PagerColors.color("#DCDCD7") : Color.white.opacity(0.15)
