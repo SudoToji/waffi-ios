@@ -1,27 +1,159 @@
 {
-  "sourceLanguage" : "en",
-  "strings" : {
-    "Order complete" : {
-      "comment" : "Live Activity status line after the order is collected or the ticket ends",
-      "localizations" : {
-        "ar" : { "stringUnit" : { "state" : "translated", "value" : "اكتمل الطلب" } },
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Order complete" } }
+  "sourceLanguage": "en",
+  "strings": {
+    "Order complete": {
+      "comment": "Live Activity status line after the order is collected or the ticket ends",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اكتمل الطلب"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Order complete"
+          }
+        }
       }
     },
-    "Preparing your order" : {
-      "comment" : "Live Activity status line while the order is being prepared",
-      "localizations" : {
-        "ar" : { "stringUnit" : { "state" : "translated", "value" : "جارٍ تحضير طلبك" } },
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Preparing your order" } }
+    "Preparing your order": {
+      "comment": "Live Activity status line while the order is being prepared",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "جارٍ تحضير طلبك"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Preparing your order"
+          }
+        }
       }
     },
-    "Ready, collect your order" : {
-      "comment" : "Live Activity status line when the order is ready",
-      "localizations" : {
-        "ar" : { "stringUnit" : { "state" : "translated", "value" : "جاهز، تفضّل باستلام طلبك" } },
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Ready, collect your order" } }
+    "Ready, collect your order": {
+      "comment": "Live Activity status line when the order is ready",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "جاهز، تفضّل باستلام طلبك"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ready, collect your order"
+          }
+        }
+      }
+    },
+    "This ticket has ended": {
+      "comment": "App Clip: the ticket was collected, ended or is unknown",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "انتهت هذه التذكرة"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This ticket has ended"
+          }
+        }
+      }
+    },
+    "Your order number": {
+      "comment": "App Clip: label above the order number",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "رقم طلبك"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your order number"
+          }
+        }
+      }
+    },
+    "Turn off silent mode so you hear it when your order is ready.": {
+      "comment": "App Clip: hint, the alert sound is muted by the silent switch",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أوقف وضع الصامت لتسمع التنبيه عندما يصبح طلبك جاهزًا."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Turn off silent mode so you hear it when your order is ready."
+          }
+        }
+      }
+    },
+    "Live Activities are off for Waffi, so your order will not show on the lock screen. Keep this screen open, or turn them on in Settings.": {
+      "comment": "App Clip: note when Live Activities are switched off",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الأنشطة المباشرة متوقفة لـ Waffi، لذا لن يظهر طلبك على شاشة القفل. أبقِ هذه الشاشة مفتوحة أو فعّلها من الإعدادات."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Live Activities are off for Waffi, so your order will not show on the lock screen. Keep this screen open, or turn them on in Settings."
+          }
+        }
+      }
+    },
+    "Connection lost. Trying again…": {
+      "comment": "App Clip: a read failed, it retries by itself",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "انقطع الاتصال. جارٍ المحاولة مرة أخرى…"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Connection lost. Trying again…"
+          }
+        }
+      }
+    },
+    "Scan the code on your ticket to follow your order.": {
+      "comment": "App Clip: opened without a valid ticket link",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "امسح الرمز الموجود على تذكرتك لمتابعة طلبك."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scan the code on your ticket to follow your order."
+          }
+        }
       }
     }
   },
-  "version" : "1.0"
+  "version": "1.0"
 }
