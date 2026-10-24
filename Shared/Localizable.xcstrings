@@ -33,6 +33,22 @@
         }
       }
     },
+    "Accounts are managed on the Waffi website by the Business Owner. To delete your account, ask your Owner, or open the website and sign in as the Owner.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تتم إدارة الحسابات على موقع وافي بواسطة مالك النشاط التجاري. لحذف حسابك، اطلب ذلك من المالك، أو افتح الموقع وسجّل الدخول بحساب المالك."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Accounts are managed on the Waffi website by the Business Owner. To delete your account, ask your Owner, or open the website and sign in as the Owner."
+          }
+        }
+      }
+    },
     "At least 8 characters, with an uppercase letter, a lowercase letter and a number.": {
       "localizations": {
         "ar": {
@@ -45,6 +61,22 @@
           "stringUnit": {
             "state": "translated",
             "value": "At least 8 characters, with an uppercase letter, a lowercase letter and a number."
+          }
+        }
+      }
+    },
+    "Business": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "النشاط التجاري"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Business"
           }
         }
       }
@@ -158,6 +190,22 @@
           "stringUnit": {
             "state": "translated",
             "value": "Current password"
+          }
+        }
+      }
+    },
+    "Delete account": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حذف الحساب"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Delete account"
           }
         }
       }
@@ -463,6 +511,22 @@
           "stringUnit": {
             "state": "translated",
             "value": "Only for Business teams. Customers just scan the QR."
+          }
+        }
+      }
+    },
+    "Open the Waffi website": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "فتح موقع وافي"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open the Waffi website"
           }
         }
       }
@@ -867,6 +931,22 @@
           "stringUnit": {
             "state": "translated",
             "value": "Sign out"
+          }
+        }
+      }
+    },
+    "Support": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الدعم"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Support"
           }
         }
       }

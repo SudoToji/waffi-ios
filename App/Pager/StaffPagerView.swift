@@ -5,7 +5,7 @@ struct StaffPagerView: View {
     let session: SessionModel
     let account: AppAccount
     @State private var model: StaffPagerModel
-    @State private var showAbout = false
+    @State private var showAccount = false
 
     init(session: SessionModel, account: AppAccount) {
         self.session = session
@@ -22,8 +22,8 @@ struct StaffPagerView: View {
         .background(Theme.background.ignoresSafeArea())
         .toolbar(.hidden, for: .navigationBar)
         .task { await model.load() }
-        .sheet(isPresented: $showAbout) {
-            NavigationStack { AboutView() }
+        .sheet(isPresented: $showAccount) {
+            NavigationStack { AccountView(session: session, account: account) }
         }
     }
 
@@ -74,7 +74,7 @@ struct StaffPagerView: View {
                 if model.branches.count > 1 {
                     Button("Change Branch", systemImage: "building.2") { model.changeBranch() }
                 }
-                Button("About", systemImage: "info.circle") { showAbout = true }
+                Button("Account", systemImage: "person.crop.circle") { showAccount = true }
                 Button("Sign out", systemImage: "rectangle.portrait.and.arrow.right", role: .destructive) {
                     Task { await session.signOut() }
                 }

@@ -17,7 +17,12 @@ targets:
   Waffi:
     type: application
     platform: iOS
-    sources: [App, Shared, Resources]
+    sources:
+      - App
+      - Shared
+      - Resources
+      - path: Privacy/App
+        buildPhase: resources
     dependencies:
       - target: WaffiLiveActivity
       - target: WaffiClip
@@ -50,7 +55,11 @@ targets:
   WaffiLiveActivity:
     type: app-extension
     platform: iOS
-    sources: [AppLiveActivity, Shared]
+    sources:
+      - AppLiveActivity
+      - Shared
+      - path: Privacy/AppLiveActivity
+        buildPhase: resources
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.waffieg.app.LiveActivity
@@ -72,7 +81,12 @@ targets:
   WaffiClip:
     type: application.on-demand-install-capable
     platform: iOS
-    sources: [Clip, Shared, Resources]
+    sources:
+      - Clip
+      - Shared
+      - Resources
+      - path: Privacy/Clip
+        buildPhase: resources
     dependencies:
       - target: WaffiClipLiveActivity
     settings:
@@ -108,7 +122,11 @@ targets:
   WaffiClipLiveActivity:
     type: app-extension
     platform: iOS
-    sources: [ClipLiveActivity, Shared]
+    sources:
+      - ClipLiveActivity
+      - Shared
+      - path: Privacy/ClipLiveActivity
+        buildPhase: resources
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.waffieg.app.Clip.LiveActivity
