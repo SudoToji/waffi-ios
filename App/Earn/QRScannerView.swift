@@ -10,28 +10,48 @@ struct QRScannerView: UIViewControllerRepresentable {
 
     func makeCoordinator() -> Coordinator { Coordinator(onScan: onScan) }
 
-    func makeUIViewController(context: Context) -> ScannerController {
-        let controller = ScannerController(
+    func makeUIViewController(context: Context) -> ScannerHost {
+        let scanner = DataScannerViewController(
             recognizedDataTypes: [.barcode(symbologies: [.qr])], qualityLevel: .balanced,
             recognizesMultipleItems: false, isHighFrameRateTrackingEnabled: false, isPinchToZoomEnabled: true,
             isGuidanceEnabled: false, isHighlightingEnabled: true)
-        controller.delegate = context.coordinator
-        return controller
+        scanner.delegate = context.coordinator
+        return ScannerHost(scanner: scanner)
     }
 
-    func updateUIViewController(_ controller: ScannerController, context: Context) {
+    func updateUIViewController(_ host: ScannerHost, context: Context) {
         context.coordinator.onScan = onScan
     }
 
-    final class ScannerController: DataScannerViewController {
+    /// Holds the scanner as a child: VisionKit's controller cannot be subclassed, and it must start once it is on screen.
+    final class ScannerHost: UIViewController {
+        private let scanner: DataScannerViewController
+
+        init(scanner: DataScannerViewController) {
+            self.scanner = scanner
+            super.init(nibName: nil, bundle: nil)
+        }
+
+        @available(*, unavailable)
+        required init?(coder: NSCoder) { fatalError("init(coder:) is not used") }
+
+        override func viewDidLoad() {
+            super.viewDidLoad()
+            addChild(scanner)
+            scanner.view.frame = view.bounds
+            scanner.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+            view.addSubview(scanner.view)
+            scanner.didMove(toParent: self)
+        }
+
         override func viewDidAppear(_ animated: Bool) {
             super.viewDidAppear(animated)
-            try? startScanning()
+            try? scanner.startScanning()
         }
 
         override func viewWillDisappear(_ animated: Bool) {
             super.viewWillDisappear(animated)
-            stopScanning()
+            scanner.stopScanning()
         }
     }
 
