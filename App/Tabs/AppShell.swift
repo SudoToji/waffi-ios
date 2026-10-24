@@ -8,6 +8,8 @@ struct AppShell: View {
     @State private var features: [String: Bool]?
     @State private var loadError: ApiError?
     @State private var selection = AppTab.overview
+    /// A Manual Code a Customer's page asks the Earn & redeem tab to open.
+    @State private var earnCode: String?
     @Environment(\.scenePhase) private var scenePhase
 
     private var tabs: [AppTab] { AppTab.visible(for: account.user, features: features ?? [:]) }
@@ -55,9 +57,27 @@ struct AppShell: View {
         switch tab {
         case .overview: OverviewView(session: session, account: account)
         case .pager: NavigationStack { StaffPagerView(session: session, account: account) }
-        case .earn: EarnView(session: session, account: account)
-        case .customers, .campaigns: ComingSoonView(tab: tab, session: session, account: account)
+        case .earn: EarnView(session: session, account: account, openCode: $earnCode)
+        case .customers:
+            CustomersView(
+                session: session, account: account, tiersOn: features?["customer_tiers"] == true,
+                openEarn: earnOpener
+            )
+            // The Customer Tiers switch is read again on foreground; the tab starts over when it flips.
+            .id(features?["customer_tiers"] == true)
+        case .campaigns: ComingSoonView(tab: tab, session: session, account: account)
         }
+    }
+
+    /// Handed to the Customers tab only when this person has the Earn & redeem tab to open.
+    private var earnOpener: ((String) -> Void)? {
+        guard tabs.contains(.earn) else { return nil }
+        return { code in openEarn(code) }
+    }
+
+    private func openEarn(_ code: String) {
+        earnCode = code
+        selection = .earn
     }
 
     private func loadFeatures() async {

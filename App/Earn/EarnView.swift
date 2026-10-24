@@ -4,11 +4,14 @@ import SwiftUI
 struct EarnView: View {
     let session: SessionModel
     let account: AppAccount
+    /// A Manual Code another tab asks to open (a Customer's page); read once, then cleared.
+    @Binding var openCode: String?
     @State private var model: EarnModel
 
-    init(session: SessionModel, account: AppAccount) {
+    init(session: SessionModel, account: AppAccount, openCode: Binding<String?>) {
         self.session = session
         self.account = account
+        _openCode = openCode
         _model = State(initialValue: EarnModel(api: session.api, account: account))
     }
 
@@ -17,6 +20,11 @@ struct EarnView: View {
             .frame(maxHeight: .infinity, alignment: .top)
             .background(Theme.background.ignoresSafeArea())
             .task { await model.load() }
+            .onChange(of: openCode, initial: true) {
+                guard let code = openCode else { return }
+                openCode = nil
+                Task { await model.lookup(code) }
+            }
             .sensoryFeedback(.success, trigger: model.successCount)
             .sensoryFeedback(.error, trigger: model.failureCount)
             .sheet(item: draftBinding) { draft in
