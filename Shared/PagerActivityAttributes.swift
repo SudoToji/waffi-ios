@@ -17,9 +17,20 @@ struct PagerActivityAttributes: ActivityAttributes {
     /// Empty when the ticket has no Branch to show.
     var branchName: String
     var number: String
+    /// The Business's Card style, fixed for the activity's life (a few bytes, far under ActivityKit's 4 KB limit).
+    var style = PagerStyle.default
 }
 
 extension PagerActivityAttributes {
+    /// An activity started by a build from before Card styles has no `style`; it keeps running with the default one.
+    init(from decoder: Decoder) throws {
+        let c = try decoder.container(keyedBy: CodingKeys.self)
+        businessName = try c.decode(String.self, forKey: .businessName)
+        branchName = try c.decode(String.self, forKey: .branchName)
+        number = try c.decode(String.self, forKey: .number)
+        style = try c.decodeIfPresent(PagerStyle.self, forKey: .style) ?? .default
+    }
+
     /// "Business | Branch", or just the Business when there is no Branch.
     var title: String { branchName.isEmpty ? businessName : "\(businessName) | \(branchName)" }
 }

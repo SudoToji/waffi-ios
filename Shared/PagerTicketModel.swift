@@ -70,7 +70,8 @@ final class PagerTicketModel: Identifiable {
                 adopt(existing)
             } else if ActivityAuthorizationInfo().areActivitiesEnabled {
                 let attributes = PagerActivityAttributes(
-                    businessName: ticket.businessName, branchName: ticket.branchName, number: ticket.number)
+                    businessName: ticket.businessName, branchName: ticket.branchName, number: ticket.number,
+                    style: ticket.style)
                 do {
                     adopt(try Activity.request(
                         attributes: attributes, content: ActivityContent(state: state, staleDate: nil), pushType: .token))

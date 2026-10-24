@@ -9,6 +9,8 @@ struct PagerRing: View {
     var size: CGFloat = 68
     /// The number's colour when the ring is not filled.
     var ink: Color = .primary
+    /// The number's colour on the filled disc.
+    var onColor: Color = .white
 
     var body: some View {
         ZStack {
@@ -23,7 +25,7 @@ struct PagerRing: View {
                     .monospacedDigit()
                     .lineLimit(1)
                     .minimumScaleFactor(0.5)
-                    .foregroundStyle(filled ? Color.white : ink)
+                    .foregroundStyle(filled ? onColor : ink)
                     .padding(size * 0.2)
             }
         }

@@ -9,8 +9,10 @@ struct PagerTicket: Decodable, Equatable {
     var logoUrl: String?
     var branchName = ""
     var number = ""
+    /// The Business's Card style; the default when an older API sends none.
+    var style = PagerStyle.default
 
-    private enum CodingKeys: String, CodingKey { case state, businessName, logoUrl, branchName, number }
+    private enum CodingKeys: String, CodingKey { case state, businessName, logoUrl, branchName, number, style }
 
     init(from decoder: Decoder) throws {
         let c = try decoder.container(keyedBy: CodingKeys.self)
@@ -20,6 +22,7 @@ struct PagerTicket: Decodable, Equatable {
         logoUrl = try c.decodeIfPresent(String.self, forKey: .logoUrl)
         branchName = try c.decode(String.self, forKey: .branchName)
         number = try c.decode(String.self, forKey: .number)
+        style = (try? c.decode(PagerStyle.self, forKey: .style)) ?? .default
     }
 }
 
