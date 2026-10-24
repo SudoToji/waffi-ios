@@ -11,7 +11,7 @@ The iPhone side of Waffi's Pager: the **Waffi** app (staff), the **App Clip** a 
 | `AppLiveActivity/` | Widget extension inside the app (`com.waffieg.app.LiveActivity`), Live Activity only. |
 | `Clip/` | `WaffiClip` App Clip target (`com.waffieg.app.Clip`). |
 | `ClipLiveActivity/` | Widget extension inside the Clip (`com.waffieg.app.Clip.LiveActivity`), Live Activity only. |
-| `Shared/` | Swift compiled into all four targets: the Live Activity attributes and its UI. |
+| `Shared/` | Swift compiled into all four targets: the Live Activity attributes, its UI, the logo helper (`PagerLogo`: the App Clip writes the Business logo to the App Group at `PagerLogo.fileURL(forBusiness:)`) and `Localizable.xcstrings` (en, ar). |
 | `Resources/` | Asset catalog (app icon) for the app and the Clip. `scripts/make_icon.py` regenerates the placeholder icon. |
 | `.github/workflows/` | `build.yml` (every push and PR: unsigned simulator build) and `testflight.yml` (signed build uploaded to TestFlight). |
 

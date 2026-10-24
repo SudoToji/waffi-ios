@@ -1,0 +1,27 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "Order complete" : {
+      "comment" : "Live Activity status line after the order is collected or the ticket ends",
+      "localizations" : {
+        "ar" : { "stringUnit" : { "state" : "translated", "value" : "اكتمل الطلب" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Order complete" } }
+      }
+    },
+    "Preparing your order" : {
+      "comment" : "Live Activity status line while the order is being prepared",
+      "localizations" : {
+        "ar" : { "stringUnit" : { "state" : "translated", "value" : "جارٍ تحضير طلبك" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Preparing your order" } }
+      }
+    },
+    "Ready, collect your order" : {
+      "comment" : "Live Activity status line when the order is ready",
+      "localizations" : {
+        "ar" : { "stringUnit" : { "state" : "translated", "value" : "جاهز، تفضّل باستلام طلبك" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Ready, collect your order" } }
+      }
+    }
+  },
+  "version" : "1.0"
+}
