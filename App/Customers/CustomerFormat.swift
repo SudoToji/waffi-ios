@@ -41,7 +41,7 @@ enum CustomerFormat {
         if text.count == 11, text.hasPrefix("0"), text.allSatisfy(\.isASCII), text.allSatisfy(\.isNumber) {
             text = "+20" + text.dropFirst()
         }
-        return text.range(of: "^\+[1-9][0-9]{6,14}$", options: .regularExpression) == nil ? nil : text
+        return text.range(of: "^\\+[1-9][0-9]{6,14}$", options: .regularExpression) == nil ? nil : text
     }
 
     /// A string of the String Catalog in another language than the phone's (the WhatsApp message is written in the Customer's).
