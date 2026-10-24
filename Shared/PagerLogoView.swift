@@ -6,7 +6,7 @@ struct PagerLogoView: View {
     var size: CGFloat = 44
     /// A tile colour to sit the logo on (the Live Activity's brand colour); nil draws the logo alone.
     var tile: Color?
-    /// The Waffi mark's colour, shown when there is no logo.
+    /// Unused since the fallback became the Waffi mark; kept so callers need no change.
     var glyph: Color = .white
     /// A circle instead of a rounded square.
     var round = false
@@ -17,11 +17,7 @@ struct PagerLogoView: View {
                 Image(uiImage: image).resizable().scaledToFill()
                     .background(tile ?? .clear)
             } else {
-                Image(systemName: "bell.fill")
-                    .font(.system(size: size * 0.45))
-                    .foregroundStyle(glyph)
-                    .frame(maxWidth: .infinity, maxHeight: .infinity)
-                    .background(tile ?? Color.accentColor)
+                WaffiMark(size: size)
             }
         }
         .frame(width: size, height: size)
