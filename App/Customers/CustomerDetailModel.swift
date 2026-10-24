@@ -6,9 +6,9 @@ import Observation
 @Observable @MainActor
 final class CustomerDetailModel {
     private let api: ApiClient
-    /// Owner or Manager: edit, Card link, cut off the Apple pass, delete.
+    /// `customers.view` (everything under Customers): edit, Card link, cut off the Apple pass, delete.
     let canManage: Bool
-    /// Owner, Manager, or a Staff Member with `customers.set_tier`.
+    /// Same permission, `customers.view`.
     let canSetTier: Bool
     /// May look a Card up (the Card Tier is read that way).
     let canLookup: Bool
@@ -36,8 +36,8 @@ final class CustomerDetailModel {
         self.tiersOn = tiersOn
         businessName = account.business.name
         let user = account.user
-        canManage = user.role == "owner" || user.role == "manager"
-        canSetTier = user.may("customers.set_tier")
+        canManage = user.may("customers.view")
+        canSetTier = user.may("customers.view")
         canLookup = user.may("cards.view") || user.may("loyalty.earn") || user.may("loyalty.redeem")
     }
 

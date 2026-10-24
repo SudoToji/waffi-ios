@@ -35,7 +35,7 @@ enum AppTab: String, CaseIterable, Identifiable {
             case .overview: manager
             case .earn: may("cards.view") || may("loyalty.earn") || may("loyalty.redeem")  // canLookupCards
             case .customers: may("customers.view")
-            case .campaigns: user.role == "owner" && features["campaigns"] == true
+            case .campaigns: may("engagement.manage") && features["campaigns"] == true
             case .pager: features["pager"] == true
             }
         }

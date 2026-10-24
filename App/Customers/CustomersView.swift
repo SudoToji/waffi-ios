@@ -17,10 +17,10 @@ struct CustomersView: View {
         self.tiersOn = tiersOn
         self.openEarn = openEarn
         _model = State(
-            initialValue: CustomersModel(api: session.api, tiersOn: tiersOn, canSetTier: account.user.may("customers.set_tier")))
+            initialValue: CustomersModel(api: session.api, tiersOn: tiersOn, canSetTier: account.user.may("customers.view")))
     }
 
-    private var canManage: Bool { account.user.role == "owner" || account.user.role == "manager" }
+    private var canManage: Bool { account.user.may("customers.view") }
 
     var body: some View {
         NavigationStack(path: $path) {
