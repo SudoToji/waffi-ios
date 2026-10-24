@@ -23,7 +23,7 @@ struct RootView: View {
             case .mustChangePassword:
                 ChangePasswordView(session: session)
             case .signedIn(let account):
-                NavigationStack { StaffPagerView(session: session, account: account) }
+                AppShell(session: session, account: account)
             }
         }
         .tint(Theme.accent)

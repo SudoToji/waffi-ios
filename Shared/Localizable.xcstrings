@@ -1,6 +1,70 @@
 {
   "sourceLanguage": "en",
   "strings": {
+    "%@ (Locked)": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ (مقفل)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ (Locked)"
+          }
+        }
+      }
+    },
+    "%@ (closed)": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ (مغلق)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ (closed)"
+          }
+        }
+      }
+    },
+    "%@ vs last week": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ عن الأسبوع الماضي"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ vs last week"
+          }
+        }
+      }
+    },
+    "+%@ this week": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "+%@ هذا الأسبوع"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "+%@ this week"
+          }
+        }
+      }
+    },
     "About": {
       "localizations": {
         "ar": {
@@ -49,6 +113,38 @@
         }
       }
     },
+    "Adjustment": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تعديل"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adjustment"
+          }
+        }
+      }
+    },
+    "All branches": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "كل الفروع"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "All branches"
+          }
+        }
+      }
+    },
     "At least 8 characters, with an uppercase letter, a lowercase letter and a number.": {
       "localizations": {
         "ar": {
@@ -65,6 +161,22 @@
         }
       }
     },
+    "Branch": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الفرع"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Branch"
+          }
+        }
+      }
+    },
     "Business": {
       "localizations": {
         "ar": {
@@ -77,6 +189,22 @@
           "stringUnit": {
             "state": "translated",
             "value": "Business"
+          }
+        }
+      }
+    },
+    "Campaigns": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الحملات"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Campaigns"
           }
         }
       }
@@ -161,6 +289,22 @@
         }
       }
     },
+    "Coming soon": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "قريبًا"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Coming soon"
+          }
+        }
+      }
+    },
     "Connection lost. Trying again…": {
       "comment": "App Clip: a read failed, it retries by itself",
       "localizations": {
@@ -178,6 +322,22 @@
         }
       }
     },
+    "Could not load recent activity. Pull down to try again.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تعذّر تحميل آخر النشاط. اسحب للأسفل للمحاولة مرة أخرى."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Could not load recent activity. Pull down to try again."
+          }
+        }
+      }
+    },
     "Current password": {
       "localizations": {
         "ar": {
@@ -190,6 +350,22 @@
           "stringUnit": {
             "state": "translated",
             "value": "Current password"
+          }
+        }
+      }
+    },
+    "Customers": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "العملاء"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Customers"
           }
         }
       }
@@ -258,6 +434,54 @@
         }
       }
     },
+    "Down %@ from last week": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "انخفاض بنسبة %@ عن الأسبوع الماضي"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Down %@ from last week"
+          }
+        }
+      }
+    },
+    "Earn & redeem": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اكسب واستبدل"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Earn & redeem"
+          }
+        }
+      }
+    },
+    "Earned": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اكتسب"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Earned"
+          }
+        }
+      }
+    },
     "Email": {
       "localizations": {
         "ar": {
@@ -286,6 +510,22 @@
           "stringUnit": {
             "state": "translated",
             "value": "Enter an address that starts with https://"
+          }
+        }
+      }
+    },
+    "Entry undone": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تم التراجع عن العملية"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Entry undone"
           }
         }
       }
@@ -334,6 +574,86 @@
           "stringUnit": {
             "state": "translated",
             "value": "Forgot password?"
+          }
+        }
+      }
+    },
+    "Gift expired": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "انتهت صلاحية الهدية"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gift expired"
+          }
+        }
+      }
+    },
+    "Gift saved": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تم حفظ الهدية"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gift saved"
+          }
+        }
+      }
+    },
+    "Good afternoon, %@": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مساء الخير، %@"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Good afternoon, %@"
+          }
+        }
+      }
+    },
+    "Good evening, %@": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مساء الخير، %@"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Good evening, %@"
+          }
+        }
+      }
+    },
+    "Good morning, %@": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "صباح الخير، %@"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Good morning, %@"
           }
         }
       }
@@ -435,6 +755,22 @@
         }
       }
     },
+    "No activity yet.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لا يوجد نشاط بعد."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No activity yet."
+          }
+        }
+      }
+    },
     "No orders ready.": {
       "localizations": {
         "ar": {
@@ -483,6 +819,22 @@
         }
       }
     },
+    "Nothing is available to your account yet. Ask the Owner to change your access.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لا يوجد شيء متاح لحسابك بعد. اطلب من المالك تغيير صلاحياتك."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nothing is available to your account yet. Ask the Owner to change your access."
+          }
+        }
+      }
+    },
     "Number pad": {
       "localizations": {
         "ar": {
@@ -527,6 +879,22 @@
           "stringUnit": {
             "state": "translated",
             "value": "Open the Waffi website"
+          }
+        }
+      }
+    },
+    "Opening balance": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "رصيد افتتاحي"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Opening balance"
           }
         }
       }
@@ -608,6 +976,22 @@
           "stringUnit": {
             "state": "translated",
             "value": "Order number"
+          }
+        }
+      }
+    },
+    "Overview": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "نظرة عامة"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Overview"
           }
         }
       }
@@ -742,6 +1126,54 @@
         }
       }
     },
+    "Recent activity": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "آخر النشاط"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recent activity"
+          }
+        }
+      }
+    },
+    "Redeemed": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "استبدل"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Redeemed"
+          }
+        }
+      }
+    },
+    "Redeemed %@": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "استبدل %@"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Redeemed %@"
+          }
+        }
+      }
+    },
     "Replace your temporary password before continuing.": {
       "localizations": {
         "ar": {
@@ -770,6 +1202,22 @@
           "stringUnit": {
             "state": "translated",
             "value": "Retry"
+          }
+        }
+      }
+    },
+    "Rewards redeemed": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مكافآت مستبدلة"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rewards redeemed"
           }
         }
       }
@@ -1017,6 +1465,22 @@
         }
       }
     },
+    "Up %@ from last week": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ارتفاع بنسبة %@ عن الأسبوع الماضي"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Up %@ from last week"
+          }
+        }
+      }
+    },
     "Version": {
       "localizations": {
         "ar": {
@@ -1029,6 +1493,22 @@
           "stringUnit": {
             "state": "translated",
             "value": "Version"
+          }
+        }
+      }
+    },
+    "Visits this week": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الزيارات هذا الأسبوع"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Visits this week"
           }
         }
       }

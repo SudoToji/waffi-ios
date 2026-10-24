@@ -5,7 +5,12 @@ struct AppAccount: Decodable, Equatable {
     struct User: Decodable, Equatable {
         let id: String
         let email: String
+        let fullName: String?
+        /// `owner`, `manager` or `cashier` (a Staff Member).
+        let role: String
         let mustChangePassword: Bool
+        /// A Staff Member's permissions (`STAFF_PERMISSIONS`); absent for the others.
+        let permissions: [String]?
     }
 
     struct Business: Decodable, Equatable {
