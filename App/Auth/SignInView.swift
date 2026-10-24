@@ -37,12 +37,7 @@ struct SignInView: View {
 
     private var header: some View {
         VStack(spacing: 14) {
-            Text(verbatim: "W")
-                .font(.system(size: 40, weight: .heavy))
-                .foregroundStyle(Theme.onAccent)
-                .frame(width: 72, height: 72)
-                .background(Theme.accent, in: RoundedRectangle(cornerRadius: 20))
-                .accessibilityHidden(true)
+            WaffiMark(size: 72)
             Text("Waffi for staff")
                 .font(.title.weight(.heavy))
                 .foregroundStyle(Theme.text)
