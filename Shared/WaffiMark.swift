@@ -14,7 +14,7 @@ struct WaffiMark: View {
                     Color(red: 236 / 255, green: 235 / 255, blue: 225 / 255),
                     style: StrokeStyle(lineWidth: 11 * scale, lineCap: .round, lineJoin: .round))
             Circle()
-                .fill(Theme.ember)
+                .fill(Color(red: 242 / 255, green: 106 / 255, blue: 75 / 255)) // the ember accent
                 .frame(width: 17 * scale, height: 17 * scale)
                 .offset(x: (94 - 8.5) * scale, y: (37 + 4 - 8.5) * scale)
         }

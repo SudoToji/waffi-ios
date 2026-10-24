@@ -1378,6 +1378,23 @@
         }
       }
     },
+    "Keep your sound on. We will alert you when your order is ready.": {
+      "comment": "Ticket screen: hint while the order is being prepared",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "خلي الصوت شغال، هننبهك أول ما طلبك يجهز."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep your sound on. We will alert you when your order is ready."
+          }
+        }
+      }
+    },
     "Live Activities are off for Waffi, so your order will not show on the lock screen. Keep this screen open, or turn them on in Settings.": {
       "comment": "App Clip: note when Live Activities are switched off",
       "localizations": {
@@ -1940,13 +1957,47 @@
         }
       }
     },
+    "Powered by": {
+      "comment": "Ticket screen footer, followed by the Waffi name and mark",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "بدعم من"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Powered by"
+          }
+        }
+      }
+    },
+    "Preparing": {
+      "comment": "Ticket screen: second step of the order track",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "بيتحضر"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Preparing"
+          }
+        }
+      }
+    },
     "Preparing your order": {
       "comment": "Live Activity status line while the order is being prepared",
       "localizations": {
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "جارٍ تحضير طلبك"
+            "value": "طلبك بيتحضر"
           }
         },
         "en": {
@@ -2037,6 +2088,23 @@
         }
       }
     },
+    "Ready, collect it at the counter": {
+      "comment": "Ticket screen: status when the order is ready",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "طلبك جاهز، استلمه من الكاونتر"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ready, collect it at the counter"
+          }
+        }
+      }
+    },
     "Ready, collect your order": {
       "comment": "Live Activity status line when the order is ready",
       "localizations": {
@@ -2050,6 +2118,23 @@
           "stringUnit": {
             "state": "translated",
             "value": "Ready, collect your order"
+          }
+        }
+      }
+    },
+    "Received": {
+      "comment": "Ticket screen: first step of the order track",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اتسجل"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Received"
           }
         }
       }
@@ -2583,6 +2668,23 @@
         }
       }
     },
+    "Show this screen at the counter.": {
+      "comment": "Ticket screen: hint when the order is ready",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اعرض الشاشة دي على الكاونتر."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show this screen at the counter."
+          }
+        }
+      }
+    },
     "Sign in": {
       "localizations": {
         "ar": {
@@ -2804,23 +2906,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "Torch"
-          }
-        }
-      }
-    },
-    "Turn off silent mode so you hear it when your order is ready.": {
-      "comment": "App Clip: hint, the alert sound is muted by the silent switch",
-      "localizations": {
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "أوقف وضع الصامت لتسمع التنبيه عندما يصبح طلبك جاهزًا."
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Turn off silent mode so you hear it when your order is ready."
           }
         }
       }
