@@ -102,10 +102,10 @@ struct Customer: Decodable, Equatable, Identifiable {
     var isQuiet: Bool { quiet == true }
     var activeCards: [CustomerCard] { cards.filter(\.isActive) }
 
-    /// "email · phone", or an em dash.
+    /// The email and the phone on their own lines (so a long email never breaks mid-word next to the phone), or an em dash.
     var contactLine: String {
         let parts = [email, phone].compactMap { $0 }.filter { !$0.isEmpty }
-        return parts.isEmpty ? "\u{2014}" : parts.joined(separator: " \u{00B7} ")
+        return parts.isEmpty ? "\u{2014}" : parts.map(CustomerFormat.ltr).joined(separator: "\n")
     }
 }
 

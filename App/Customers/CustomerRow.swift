@@ -13,7 +13,7 @@ struct CustomerRow: View {
                     Text(verbatim: customer.name).font(.body.weight(.bold)).foregroundStyle(Theme.text)
                     LoyaltyMarkBadge(mark: customer.loyaltyMark)
                 }
-                Text(verbatim: CustomerFormat.ltr(customer.contactLine))
+                Text(verbatim: customer.contactLine)
                     .font(.footnote)
                     .foregroundStyle(Theme.secondaryText)
                 if customer.isQuiet {

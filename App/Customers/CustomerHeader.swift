@@ -16,7 +16,7 @@ struct CustomerHeader: View {
                         .font(.title2.weight(.heavy))
                         .foregroundStyle(Theme.text)
                         .accessibilityAddTraits(.isHeader)
-                    Text(verbatim: CustomerFormat.ltr(customer.contactLine))
+                    Text(verbatim: customer.contactLine)
                         .font(.subheadline)
                         .foregroundStyle(Theme.secondaryText)
                     HStack(spacing: 6) {
