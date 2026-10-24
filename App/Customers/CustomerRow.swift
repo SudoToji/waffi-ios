@@ -13,8 +13,10 @@ struct CustomerRow: View {
                     Text(verbatim: customer.name).font(.body.weight(.bold)).foregroundStyle(Theme.text)
                     LoyaltyMarkBadge(mark: customer.loyaltyMark)
                 }
-                Text(verbatim: customer.contactLine)
-                    .font(.footnote)
+                VStack(alignment: .leading, spacing: 0) {
+                    ForEach(customer.contactLines, id: \.self) { Text(verbatim: $0).lineLimit(1).truncationMode(.middle) }
+                }
+                .font(.footnote)
                     .foregroundStyle(Theme.secondaryText)
                 if customer.isQuiet {
                     Text("No visit for 10 days").font(.caption.weight(.semibold)).foregroundStyle(Theme.warning)

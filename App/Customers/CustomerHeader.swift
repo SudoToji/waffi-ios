@@ -16,8 +16,10 @@ struct CustomerHeader: View {
                         .font(.title2.weight(.heavy))
                         .foregroundStyle(Theme.text)
                         .accessibilityAddTraits(.isHeader)
-                    Text(verbatim: customer.contactLine)
-                        .font(.subheadline)
+                    VStack(alignment: .leading, spacing: 0) {
+                        ForEach(customer.contactLines, id: \.self) { Text(verbatim: $0).lineLimit(1).truncationMode(.middle) }
+                    }
+                    .font(.subheadline)
                         .foregroundStyle(Theme.secondaryText)
                     HStack(spacing: 6) {
                         if showTier, let tier = customer.customerTier { TierBadge(tier: tier) }
