@@ -2,7 +2,7 @@ import SwiftUI
 
 /// The lock-screen card: the Business's chosen layout (`PagerStyles/`), drawn for one state.
 ///
-/// Layouts A to C are drawn left to right, D right to left, E and F by the phone language, whatever the phone's language, because the card is bilingual by design.
+/// Layouts A to C are bilingual and drawn left to right, D right to left; E and F show one language, the phone's, and mirror in Arabic.
 struct PagerLockScreenView: View {
     let attributes: PagerActivityAttributes
     let state: PagerState
