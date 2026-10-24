@@ -1,3 +1,5 @@
+import Foundation
+
 /// What a card says, in both languages at once (the Live Activity is not localized per phone language). Mirrors the web's
 /// `pagerTicket.wording`, the Ready push alerts and the mockups; `order` keeps the original texts.
 struct PagerWords {
